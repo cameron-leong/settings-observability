@@ -1,7 +1,7 @@
 {
   "environmentUrl": "https://guu84124.apps.dynatrace.com/",
   "app": {
-    "name": "configuration manager",
+    "name": "Settings Observability",
     "version": "0.0.0",
     "description": "A starting project with routing, fetching data, and charting",
     "id": "my.configuration.manager",
