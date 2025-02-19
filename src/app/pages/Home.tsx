@@ -21,41 +21,24 @@ export const Home = () => {
         style={{ paddingBottom: 32 }}
       ></img>
 
-      <Heading>Welcome To Your Dynatrace App</Heading>
-      <Paragraph>
-        Edit <Strong>src/app/pages/Home.tsx</Strong> and save to reload the app.
-      </Paragraph>
-      <Paragraph>
-        For more information and help on app development, check out the
-        following:
-      </Paragraph>
+      <Heading>Welcome to Settings Observability</Heading>
 
       <Flex gap={48} paddingTop={64} flexFlow="wrap">
         <Card
-          href="/data"
+          href="/anomalydetection"
           inAppLink
           imgSrc={
-            theme === "light" ? "./assets/data.png" : "./assets/data_dark.png"
+            theme === "light" ? "./assets/anomaly_logo_dark.svg" : "./assets/anomaly_logo_light.svg"
           }
-          name="Explore data"
+          name="Anomaly Detection Settings"
         />
         <Card
-          href="https://dt-url.net/developers"
+          href="/operational"
+          inAppLink
           imgSrc={
-            theme === "light"
-              ? "./assets/devportal.png"
-              : "./assets/devportal_dark.png"
+            theme === "light" ? "./assets/operational_logo_dark.svg" : "./assets/operational_logo_light.svg"
           }
-          name="Dynatrace Developer"
-        />
-        <Card
-          href="https://dt-url.net/devcommunity"
-          imgSrc={
-            theme === "light"
-              ? "./assets/community.png"
-              : "./assets/community_dark.png"
-          }
-          name="Developer Community"
+          name="Operational Settings"
         />
       </Flex>
     </Flex>

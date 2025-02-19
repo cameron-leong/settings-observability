@@ -19,7 +19,7 @@ type CardProps = {
 
 export const Card = ({ href, inAppLink, imgSrc, name }: CardProps) => {
   const content = (
-    <Flex flexDirection="column" alignItems="center" gap={24}>
+    <Flex flexDirection="column" alignItems="center" gap={12}>
       <img src={imgSrc} alt={name} height="100px" width="100px" />
       {name}
     </Flex>
@@ -32,13 +32,14 @@ export const Card = ({ href, inAppLink, imgSrc, name }: CardProps) => {
       justifyContent="center"
       gap={24}
       style={{
-        width: "210px",
-        height: "210px",
+        width: "300px",
+        height: "150px",
         textAlign: "center",
         border: `${Colors.Border.Neutral.Default}`,
-        borderRadius: `${Borders.Radius.Container.Default}`,
+        borderRadius: 20,
         background: `${Colors.Background.Surface.Default}`,
         boxShadow: `${BoxShadows.Surface.Raised.Rest}`,
+        padding: 15
       }}
     >
       {/* An in-app link needs to be handled by react-router to avoid full page reloads */}
