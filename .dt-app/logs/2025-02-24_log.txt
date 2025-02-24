@@ -162,3 +162,160 @@
    8 |
    9 | export const App = () => {
   10 |   return (
+2025-02-24T10:43:00.915Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-02-24T10:43:01.726Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-02-24T10:43:02.492Z INFO Ui build finished successfully.
+2025-02-24T10:43:02.505Z DEBUG [BUILD_TIME] Built UI in 1824.119299998507ms.
+2025-02-24T10:43:02.505Z INFO Reloading browser
+2025-02-24T10:43:03.010Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-02-24T10:43:03.010Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3Dc6ee791b-8bcc-43be-935b-bcef219ebb52&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-02-24T10:43:03.010Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-02-24T10:43:03.012Z DEBUG [AUTH] OAuth2 token expired with a value of: -52.012 seconds
+2025-02-24T10:43:06.470Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-02-24T10:43:06.470Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3Dc6ee791b-8bcc-43be-935b-bcef219ebb52&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-02-24T10:43:06.470Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-02-24T10:43:06.544Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-02-24T10:43:06.544Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3Dc6ee791b-8bcc-43be-935b-bcef219ebb52&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-02-24T10:43:06.544Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-02-24T10:43:07.973Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-02-24T10:43:07.973Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3Dc6ee791b-8bcc-43be-935b-bcef219ebb52&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-02-24T10:43:07.973Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-02-24T10:50:46.003Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-02-24T10:50:47.076Z INFO > C:/Users/cameron.leong/OneDrive - Dynatrace/SettingsApp/settings-observability/src/app/App.tsx:7:33 - Error: TS2307 Cannot find module './pages/PageWithSidebar' or its corresponding type declarations.
+   5 | import { Header } from "./components/Header";
+   6 | import { Home } from "./pages/Home";
+>  7 | import { PageWithSidebar } from "./pages/PageWithSidebar";
+     |                                 ^
+   8 |
+   9 | export const App = () => {
+  10 |   return (
+2025-02-24T10:50:47.076Z DEBUG [TYPE_CHECKER] Watch status change: message TS6193: Found 1 error. Watching for file changes.
+
+2025-02-24T10:50:49.134Z INFO Ui build finished successfully.
+2025-02-24T10:50:49.135Z ERROR Error: Could not resolve "./pages/PageWithSidebar" at location: src/app/App.tsx:7:32
+2025-02-24T10:50:49.145Z DEBUG [BUILD_TIME] Built UI in 3271.837200000882ms.
+2025-02-24T10:50:49.147Z INFO > C:\Users\cameron.leong\OneDrive - Dynatrace\SettingsApp\settings-observability\src\app\App.tsx:7:33 - Error: Could not resolve "./pages/PageWithSidebar"
+   5 | import { Header } from "./components/Header";
+   6 | import { Home } from "./pages/Home";
+>  7 | import { PageWithSidebar } from "./pages/PageWithSidebar";
+     |                                 ^
+   8 |
+   9 | export const App = () => {
+  10 |   return (
+2025-02-24T10:51:03.834Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-02-24T10:51:04.491Z INFO > C:/Users/cameron.leong/OneDrive - Dynatrace/SettingsApp/settings-observability/src/app/App.tsx:19:41 - Error: TS2739 Type '{}' is missing the following properties from type '{ appName: any; sideBarTitle: any; mainTitle: any; mainSubtitle: any; }': appName, sideBarTitle, mainTitle, mainSubtitle
+  17 |           <Route path="/" element={<Home />} />
+  18 |           <Route path="/data" element={<Data />} />
+> 19 |           <Route path="/page" element={<PageWithSidebar />} />
+     |                                         ^
+  20 |         </Routes>
+  21 |       </Page.Main>
+  22 |     </Page>
+2025-02-24T10:51:04.492Z DEBUG [TYPE_CHECKER] Watch status change: message TS6193: Found 1 error. Watching for file changes.
+
+2025-02-24T10:51:05.337Z INFO Ui build finished successfully.
+2025-02-24T10:51:05.369Z DEBUG [BUILD_TIME] Built UI in 1670.8625999987125ms.
+2025-02-24T10:51:05.375Z INFO Reloading browser
+2025-02-24T10:51:05.849Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-02-24T10:51:05.849Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3Dc6ee791b-8bcc-43be-935b-bcef219ebb52&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-02-24T10:51:05.849Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-02-24T10:51:05.851Z DEBUG [AUTH] OAuth2 token expired with a value of: -180.851 seconds
+2025-02-24T10:51:10.303Z INFO Ui build finished successfully.
+2025-02-24T10:51:10.319Z DEBUG [BUILD_TIME] Built UI in 1975.0281999986619ms.
+2025-02-24T10:51:10.854Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-02-24T10:51:10.854Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3Dc6ee791b-8bcc-43be-935b-bcef219ebb52&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-02-24T10:51:10.854Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-02-24T10:51:10.863Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-02-24T10:51:10.863Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3Dc6ee791b-8bcc-43be-935b-bcef219ebb52&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-02-24T10:51:10.863Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-02-24T10:51:12.349Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-02-24T10:51:12.349Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3Dc6ee791b-8bcc-43be-935b-bcef219ebb52&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-02-24T10:51:12.349Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-02-24T11:05:46.650Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-02-24T11:05:47.684Z INFO > C:/Users/cameron.leong/OneDrive - Dynatrace/SettingsApp/settings-observability/src/app/App.tsx:7:10 - Error: TS2459 Module '"./pages/Page"' declares 'PageWithSidebar' locally, but it is not exported.
+   5 | import { Header } from "./components/Header";
+   6 | import { Home } from "./pages/Home";
+>  7 | import { PageWithSidebar } from "./pages/Page";
+     |          ^
+   8 |
+   9 | export const App = () => {
+  10 |   return (
+2025-02-24T11:05:47.684Z DEBUG [TYPE_CHECKER] Watch status change: message TS6193: Found 1 error. Watching for file changes.
+
+2025-02-24T11:05:49.397Z INFO Ui build finished successfully.
+2025-02-24T11:05:49.397Z ERROR Error: No matching export in "src/app/pages/Page.tsx" for import "PageWithSidebar" at location: src/app/App.tsx:7:9
+2025-02-24T11:05:49.418Z DEBUG [BUILD_TIME] Built UI in 2947.717299999669ms.
+2025-02-24T11:05:49.420Z INFO > C:\Users\cameron.leong\OneDrive - Dynatrace\SettingsApp\settings-observability\src\app\App.tsx:7:10 - Error: No matching export in "src/app/pages/Page.tsx" for import "PageWithSidebar"
+   5 | import { Header } from "./components/Header";
+   6 | import { Home } from "./pages/Home";
+>  7 | import { PageWithSidebar } from "./pages/Page";
+     |          ^
+   8 |
+   9 | export const App = () => {
+  10 |   return (
+2025-02-24T11:52:42.349Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-02-24T11:52:43.789Z INFO > C:/Users/cameron.leong/OneDrive - Dynatrace/SettingsApp/settings-observability/src/app/App.tsx:7:65 - Error: TS1002 Unterminated string literal.
+   5 | import { Header } from "./components/Header";
+   6 | import { Home } from "./pages/Home";
+>  7 | import { PageWithSidebar } from "./components/PageWithSidebar";"
+     |                                                                 ^
+   8 |
+   9 | export const App = () => {
+  10 |   return (
+2025-02-24T11:52:43.790Z DEBUG [TYPE_CHECKER] Watch status change: message TS6193: Found 1 error. Watching for file changes.
+
+2025-02-24T11:52:43.795Z INFO Ui build finished successfully.
+2025-02-24T11:52:43.796Z ERROR Error: Unterminated string literal at location: src/app/App.tsx:7:64
+2025-02-24T11:52:43.883Z DEBUG [BUILD_TIME] Built UI in 1812.0270999986678ms.
+2025-02-24T11:52:43.885Z INFO > C:\Users\cameron.leong\OneDrive - Dynatrace\SettingsApp\settings-observability\src\app\App.tsx:7:65 - Error: Unterminated string literal
+   5 | import { Header } from "./components/Header";
+   6 | import { Home } from "./pages/Home";
+>  7 | import { PageWithSidebar } from "./components/PageWithSidebar";"
+     |                                                                 ^
+   8 |
+   9 | export const App = () => {
+  10 |   return (
+2025-02-24T11:52:53.923Z INFO Ui build finished successfully.
+2025-02-24T11:52:53.923Z ERROR Error: Unterminated string literal at location: src/app/App.tsx:7:64
+2025-02-24T11:52:53.933Z DEBUG [BUILD_TIME] Built UI in 171.4951999988407ms.
+2025-02-24T11:52:53.934Z INFO > C:\Users\cameron.leong\OneDrive - Dynatrace\SettingsApp\settings-observability\src\app\App.tsx:7:65 - Error: Unterminated string literal
+   5 | import { Header } from "./components/Header";
+   6 | import { Home } from "./pages/Home";
+>  7 | import { PageWithSidebar } from "./components/PageWithSidebar";"
+     |                                                                 ^
+   8 |
+   9 | export const App = () => {
+  10 |   return (
+2025-02-24T11:52:53.969Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-02-24T11:52:54.170Z INFO > C:/Users/cameron.leong/OneDrive - Dynatrace/SettingsApp/settings-observability/src/app/App.tsx:7:65 - Error: TS1002 Unterminated string literal.
+   5 | import { Header } from "./components/Header";
+   6 | import { Home } from "./pages/Home";
+>  7 | import { PageWithSidebar } from "./components/PageWithSidebar";"
+     |                                                                 ^
+   8 |
+   9 | export const App = () => {
+  10 |   return (
+2025-02-24T11:52:54.171Z DEBUG [TYPE_CHECKER] Watch status change: message TS6193: Found 1 error. Watching for file changes.
+
+2025-02-24T11:53:02.470Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-02-24T11:53:03.677Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-02-24T11:53:05.669Z INFO Ui build finished successfully.
+2025-02-24T11:53:05.688Z DEBUG [BUILD_TIME] Built UI in 3341.971400000155ms.
+2025-02-24T11:53:05.688Z INFO Reloading browser
+2025-02-24T11:53:06.877Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-02-24T11:53:06.878Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3Dc6ee791b-8bcc-43be-935b-bcef219ebb52&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-02-24T11:53:06.878Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-02-24T11:53:06.881Z DEBUG [AUTH] OAuth2 token expired with a value of: -3418.881 seconds
+2025-02-24T11:55:29.150Z ERROR Error: Terminal interrupt signal
+2025-02-24T11:55:29.150Z DEBUG [TELEMETRY] Not reporting this specific error
+2025-02-24T11:55:29.150Z DEBUG [TELEMETRY] Closing OpenKit connection
+2025-02-24T11:55:30.394Z DEBUG [TELEMETRY] Successfully closed OpenKit connection
