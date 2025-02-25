@@ -13,7 +13,8 @@ import {
   
 
 
-  export const DataTable = () => {  
+  export const DataTable = () => { 
+    //Define the columns that make up the table. The useMemo hook ensures they are only rendered once 
     const columns = useMemo<DataTableV2ColumnDef<(typeof data)[number]>[]>(() => {
       return [
         {
@@ -39,6 +40,7 @@ import {
       ];
     }, []);
   
+    //Define the data that is to be displayed in the table. The keys must match the column accessors defined above.
     const data = useMemo(
       () =>
         new Array(300).fill(0).map(() => ({
@@ -52,7 +54,7 @@ import {
         })),
       []
     );
-    
+
     return (
       <DataTableV2 
         columns={columns} 

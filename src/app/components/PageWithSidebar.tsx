@@ -1,5 +1,4 @@
 import React from 'react';
-
 import {
   AppHeader,
   Page,
@@ -34,7 +33,7 @@ export const PageWithSidebar = ({appName}) => {
           </AppHeader.NavItems>
         </AppHeader>
       </Page.Header>
-      < SideBar title={"Sidebar"} subtitle={"subtite"}/>
+      < SideBar title={"Sidebar"} subtitle={"subtitle"}/>
       <MainContent title={"Main content"} subtitle={"subtitle"} />
       < DetailedView title={"Detailed view"} subtitle={"more details"} />
     </Page>

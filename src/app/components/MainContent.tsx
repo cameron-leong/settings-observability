@@ -12,6 +12,7 @@ import Colors from '@dynatrace/strato-design-tokens/colors';
 import Spacings from '@dynatrace/strato-design-tokens/spacings';
 import { Card } from './Card';
 import { DataTable } from './DataTable';
+import { LevelToggle } from './LevelToggle';
 
 // const Placeholder = () => (
 //   <div
@@ -39,8 +40,8 @@ export const MainContent = ({title, subtitle  }) => {
   const theme = useCurrentTheme();
   return (
 
-      <Page.Main style={{ display: 'flex', flexDirection: 'column' }}>
-        <TitleBar>
+      <Page.Main style={{ display: 'flex', flexDirection: 'column'}}>
+        <TitleBar style={{ marginBottom: '20px' }}>
           <TitleBar.Prefix>
             <Page.PanelControlButton target="sidebar" />
           </TitleBar.Prefix>
@@ -52,6 +53,7 @@ export const MainContent = ({title, subtitle  }) => {
             <Page.PanelControlButton />
           </TitleBar.Action>
         </TitleBar>
+        <LevelToggle />
         <DataTable />
       </Page.Main>
 

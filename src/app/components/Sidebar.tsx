@@ -11,8 +11,8 @@ export const SideBar = ({title, subtitle}) => {
   return (
       <Page.Sidebar >
         <TitleBar>
-          <TitleBar.Title>Sidebar</TitleBar.Title>
-          <TitleBar.Subtitle>e.g. for navigation</TitleBar.Subtitle>
+          <TitleBar.Title>{title}</TitleBar.Title>
+          <TitleBar.Subtitle>{subtitle}</TitleBar.Subtitle>
           <TitleBar.Action>
             <Page.PanelControlButton />
           </TitleBar.Action>
