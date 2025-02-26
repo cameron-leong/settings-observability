@@ -26,14 +26,14 @@ const Placeholder = () => (
 export const PageWithSidebar = ({appName}) => {
   return (
     <Page>
-      <Page.Header>
+      {/* <Page.Header>
         <AppHeader>
           <AppHeader.NavItems>
             <AppHeader.AppNavLink appName="MyApp" />
           </AppHeader.NavItems>
         </AppHeader>
-      </Page.Header>
-      < SideBar title={"Sidebar"} subtitle={"subtitle"}/>
+      </Page.Header> */}
+      < SideBar title={"Configurations"} subtitle={"Select which configurations to view"}/>
       <MainContent title={"Main content"} subtitle={"subtitle"} />
       < DetailedView title={"Detailed view"} subtitle={"more details"} />
     </Page>

@@ -791,3 +791,18 @@
 2025-02-24T16:44:39.433Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
 2025-02-24T16:44:39.433Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3Dad378787-f073-4f9d-94a8-a0ec39256788&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
 2025-02-24T16:44:39.433Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-02-24T16:46:15.943Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-02-24T16:46:18.888Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-02-24T16:46:18.937Z INFO Ui build finished successfully.
+2025-02-24T16:46:18.960Z DEBUG [BUILD_TIME] Built UI in 3111.870799999684ms.
+2025-02-24T16:46:18.960Z INFO Reloading browser
+2025-02-24T16:46:19.831Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-02-24T16:46:19.831Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3Dad378787-f073-4f9d-94a8-a0ec39256788&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-02-24T16:46:19.831Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-02-24T16:46:19.832Z DEBUG [AUTH] OAuth2 token expired with a value of: 8.168000000000001 seconds
+2025-02-25T08:00:21.039Z ERROR Error: Terminal interrupt signal
+2025-02-25T08:00:21.039Z DEBUG [TELEMETRY] Not reporting this specific error
+2025-02-25T08:00:21.039Z DEBUG [TELEMETRY] Closing OpenKit connection
+2025-02-25T08:00:22.241Z DEBUG [TELEMETRY] Successfully closed OpenKit connection
