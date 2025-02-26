@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { Accordion } from "@dynatrace/strato-components-preview/content";
+import { Accordion, SingleExpanded } from "@dynatrace/strato-components-preview/content";
 import { Spacings } from "@dynatrace/strato-design-tokens";
 import Colors from "@dynatrace/strato-design-tokens/colors";
 import {
@@ -9,6 +9,7 @@ import {
   TitleBar,
 } from '@dynatrace/strato-components-preview/layouts';
 
+//Set style for each item within the sidebar
 const SidebarItem = styled("div")<{ selected?: boolean; main?: boolean }>`
   cursor: pointer;
   padding: ${Spacings.Size8} ${Spacings.Size16};
@@ -28,37 +29,19 @@ const SidebarItem = styled("div")<{ selected?: boolean; main?: boolean }>`
   }
 `;
 
-export const SideBar = ({title, subtitle}) => {
+export const SideBar = ({title, subtitle, items}) => {
+  const [singleSection, setSingleSection] = useState<SingleExpanded>('');
   return (
       <Page.Sidebar keepMounted>
         <TitleBar>
           <TitleBar.Title>{title}</TitleBar.Title>
           <TitleBar.Subtitle>{subtitle}</TitleBar.Subtitle>
-          {/* <TitleBar.Action>
-            <Page.PanelControlButton />
-          </TitleBar.Action> */}
         </TitleBar>
-        <SidebarItem>
-          Anomaly Detection
-        </SidebarItem>
-        <SidebarItem>
-          Infrastructure
-        </SidebarItem>
-        <SidebarItem>
-          Services
-        </SidebarItem>
-        <SidebarItem>
-          Operational settings
-        </SidebarItem>
-        <SidebarItem>
-          Management Zones
-        </SidebarItem>
-        <SidebarItem>
-          Alerting Profiles
-        </SidebarItem>
-        <SidebarItem>
-          Problem notifications
-        </SidebarItem>
+        {items.map((item, index) => (
+          <SidebarItem key={index}>
+            {item}
+          </SidebarItem>
+        ))}
       </Page.Sidebar>
   );
 };
