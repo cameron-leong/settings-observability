@@ -8,6 +8,7 @@ import {
   Page,
   TitleBar,
 } from '@dynatrace/strato-components-preview/layouts';
+import { AccordionComponent } from "./Accordion";
 
 //Set style for each item within the sidebar
 const SidebarItem = styled("div")<{ selected?: boolean; main?: boolean }>`
@@ -29,6 +30,9 @@ const SidebarItem = styled("div")<{ selected?: boolean; main?: boolean }>`
   }
 `;
 
+
+
+
 export const SideBar = ({title, subtitle, items}) => {
   const [singleSection, setSingleSection] = useState<SingleExpanded>('');
   return (
@@ -37,11 +41,20 @@ export const SideBar = ({title, subtitle, items}) => {
           <TitleBar.Title>{title}</TitleBar.Title>
           <TitleBar.Subtitle>{subtitle}</TitleBar.Subtitle>
         </TitleBar>
-        {items.map((item, index) => (
-          <SidebarItem key={index}>
-            {item}
-          </SidebarItem>
-        ))}
+        <Accordion defaultExpanded={["Anomaly detection", "Operational settings"]} multiple>
+            {items.map((section, index) => (
+              <Accordion.Section key={index} id={section.category}>
+                <Accordion.SectionLabel>{section.category}</Accordion.SectionLabel>
+                <Accordion.SectionContent>
+                  {section.items.map((item, idx) => (
+                    <SidebarItem key={idx}>
+                      {item} 
+                    </SidebarItem>
+                  ))}
+                </Accordion.SectionContent>
+              </Accordion.Section>
+            ))}
+          </Accordion>
       </Page.Sidebar>
   );
 };

@@ -33,7 +33,8 @@ export const DetailedView = ({title, subtitle}) => {
             <Page.PanelControlButton />
           </TitleBar.Action>
         </TitleBar>
-        <Placeholder />
+        {/* <Placeholder /> */}
+        Details of the settings
       </Page.DetailView>
   );
 };
