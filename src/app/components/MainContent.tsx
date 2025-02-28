@@ -14,17 +14,7 @@ import { Card } from './Card';
 import { DataTable } from './DataTable';
 import { LevelToggle } from './LevelToggle';
 
-// const Placeholder = () => (
-//   <div
-//     style={{
-//       width: '100%',
-//       height: '100%',
-//       marginTop: Spacings.Size24,
-//       borderRadius: Borders.Radius.Container.Default,
-//       backgroundColor: Colors.Background.Container.Neutral.Default,
-//     }}
-//   />
-// );
+
 const Content = () => (
   <Card
       href="/anomalydetection"
@@ -36,10 +26,10 @@ const Content = () => (
   />
 );
 
-export const MainContent = ({title, subtitle  }) => {
+export const MainContent = ({title, subtitle, toggleGroups,isDetailViewVisible, setIsDetailViewVisible }) => {
   const theme = useCurrentTheme();
+  console.log("In main content: ", isDetailViewVisible)
   return (
-
       <Page.Main style={{ display: 'flex', flexDirection: 'column'}}>
         <TitleBar style={{ marginBottom: '20px' }}>
           <TitleBar.Prefix>
@@ -50,10 +40,12 @@ export const MainContent = ({title, subtitle  }) => {
             {subtitle}
           </TitleBar.Subtitle>
           <TitleBar.Action>
-            <Page.PanelControlButton />
+            <Page.PanelControlButton
+              onClick={() => setIsDetailViewVisible(!isDetailViewVisible)}
+            />
           </TitleBar.Action>
         </TitleBar>
-        <LevelToggle />
+        <LevelToggle toggleGroups={toggleGroups}/>
         <DataTable />
       </Page.Main>
 

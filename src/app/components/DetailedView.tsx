@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import {
   AppHeader,
@@ -21,16 +21,24 @@ const Placeholder = () => (
   />
 );
 
-export const DetailedView = ({title, subtitle}) => {
+
+export const DetailedView = ({title, subtitle, isDetailViewVisible, setIsDetailViewVisible}) => {
+  console.log("In det view:", isDetailViewVisible)
   return (
-      <Page.DetailView style={{ display: 'flex', flexDirection: 'column' }}>
+      <Page.DetailView 
+        style={{ display: 'flex', flexDirection: 'column' }}
+        dismissed={!isDetailViewVisible}
+        onDismissChange={(state) => setIsDetailViewVisible(state)}
+      >
         <TitleBar>
           <TitleBar.Title>{title}</TitleBar.Title>
           <TitleBar.Subtitle>
             {subtitle}
           </TitleBar.Subtitle>
           <TitleBar.Action>
-            <Page.PanelControlButton />
+            <Page.PanelControlButton
+              onClick={() => setIsDetailViewVisible(false)}
+            />
           </TitleBar.Action>
         </TitleBar>
         {/* <Placeholder /> */}

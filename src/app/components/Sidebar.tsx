@@ -4,12 +4,12 @@ import { Accordion, SingleExpanded } from "@dynatrace/strato-components-preview/
 import { Spacings } from "@dynatrace/strato-design-tokens";
 import Colors from "@dynatrace/strato-design-tokens/colors";
 import Borders from '@dynatrace/strato-design-tokens/borders';
+import { CriticalIcon, OfficeFilledIcon } from '@dynatrace/strato-icons';
 import {
   AppHeader,
   Page,
   TitleBar,
 } from '@dynatrace/strato-components-preview/layouts';
-import { AccordionComponent } from "./Accordion";
 
 const SidebarItem = styled("div")<{ selected?: boolean; main?: boolean }>`
   cursor: pointer;
@@ -31,6 +31,8 @@ const SidebarItem = styled("div")<{ selected?: boolean; main?: boolean }>`
   }
 `;
 
+const icons = [<CriticalIcon style={{verticalAlign: 'middle'}}/>, <OfficeFilledIcon style={{verticalAlign: 'middle'}}/>]
+
 export const SideBar = ({ title, subtitle, items }) => {
   const [selectedItem, setSelectedItem] = useState<string | null>(null);
 
@@ -43,7 +45,7 @@ export const SideBar = ({ title, subtitle, items }) => {
       <Accordion defaultExpanded={["Anomaly detection", "Operational settings"]} multiple showDividers={false}>
         {items.map((section, index) => (
           <Accordion.Section key={index} id={section.category}>
-            <Accordion.SectionLabel>{section.category}</Accordion.SectionLabel>
+            <Accordion.SectionLabel> {icons[index]} {section.category}</Accordion.SectionLabel>
             <Accordion.SectionContent>
               {section.items.map((item, idx) => (
                 <SidebarItem

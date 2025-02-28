@@ -5,14 +5,18 @@ import {
   ToggleButtonGroupItem,
 } from '@dynatrace/strato-components-preview/buttons';
 
-export const LevelToggle = () => {
+
+
+export const LevelToggle = ({toggleGroups}) => {
   const [value, setValue] = useState('left');
 
   return (
     <ToggleButtonGroup value={value} onChange={setValue}>
-      <ToggleButtonGroupItem value="left">Environment</ToggleButtonGroupItem>
-      <ToggleButtonGroupItem value="center">Host group</ToggleButtonGroupItem>
-      <ToggleButtonGroupItem value="right">Individual</ToggleButtonGroupItem>
+      { toggleGroups.map((group, index) => (
+        <ToggleButtonGroupItem key={index} value={group.position}>
+          {group.label}
+        </ToggleButtonGroupItem>
+      ))}
     </ToggleButtonGroup>
   );
 };
