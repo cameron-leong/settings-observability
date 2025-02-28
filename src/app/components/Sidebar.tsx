@@ -30,7 +30,6 @@ const SidebarItem = styled("div")<{ selected?: boolean; main?: boolean }>`
       props.main ? "transparent" : Colors.Theme.Neutral[40]};
   }
 `;
-
 const icons = [<CriticalIcon style={{verticalAlign: 'middle'}}/>, <OfficeFilledIcon style={{verticalAlign: 'middle'}}/>]
 
 export const SideBar = ({ title, subtitle, items }) => {

@@ -42,7 +42,6 @@ const toggleGroups = [
 export const MainPage = ({appName}) => {
   //Handle states
   const [isDetailViewVisible, setIsDetailViewVisible] = useState<boolean>(false);
-  console.log(setIsDetailViewVisible)
   return (
     <Page>
       < SideBar 
@@ -58,8 +57,8 @@ export const MainPage = ({appName}) => {
         setIsDetailViewVisible={setIsDetailViewVisible} 
       />
       < DetailedView 
-        title={"Detailed view"} 
-        subtitle={"more details"} 
+        title={"CPU Saturation"} 
+        description={"CPU Saturation problems are raised when CPU Usage % goes above the defined threshold for the defined period of time"}
         isDetailViewVisible={isDetailViewVisible} 
         setIsDetailViewVisible={setIsDetailViewVisible}
       />
