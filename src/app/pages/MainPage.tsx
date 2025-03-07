@@ -58,6 +58,7 @@ export const MainPage = ({appName}) => {
       />
       < DetailedView 
         title={"CPU Saturation"} 
+        subtitle={""} 
         description={"CPU Saturation problems are raised when CPU Usage % goes above the defined threshold for the defined period of time"}
         isDetailViewVisible={isDetailViewVisible} 
         setIsDetailViewVisible={setIsDetailViewVisible}

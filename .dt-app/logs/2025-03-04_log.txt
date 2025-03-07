@@ -1,0 +1,8 @@
+2025-03-04T15:09:57.007Z DEBUG [TELEMETRY] Creating a new HTTP and HTTPS interceptor for tracing
+2025-03-04T15:09:57.009Z DEBUG [TELEMETRY] Successfully initialized OpenKit
+2025-03-04T15:09:57.009Z DEBUG [TELEMETRY] Telemetry enabled: Session ID "805523488316056000"
+2025-03-04T15:09:57.014Z DEBUG [TELEMETRY] Identification successful
+2025-03-04T15:10:28.882Z ERROR Error: Terminal interrupt signal
+2025-03-04T15:10:28.885Z DEBUG [TELEMETRY] Not reporting this specific error
+2025-03-04T15:10:28.886Z DEBUG [TELEMETRY] Closing OpenKit connection
+2025-03-04T15:10:29.266Z DEBUG [TELEMETRY] Successfully closed OpenKit connection
