@@ -26,7 +26,7 @@ import {
   ToggleButtonGroup,
   ToggleButtonGroupItem,
 } from '@dynatrace/strato-components-preview/buttons';
-
+import { ProblemCard } from './ProblemCard';
 // const Placeholder = () => (
 //   <div
 //     style={{
@@ -61,7 +61,7 @@ export const DetailedView = ({
 }) => {
   console.log(Subheading)
     //Define the columns that will make up the table
-    const columns = useMemo<DataTableV2ColumnDef<(typeof data)[number]>[]>(() => {
+    const overrideColumns = useMemo<DataTableV2ColumnDef<(typeof overrideData)[number]>[]>(() => {
       return [
         {
           id: 'EntityName',
@@ -86,7 +86,7 @@ export const DetailedView = ({
       ];
     }, []);
     //Define the data that is to be displayed in the table. The keys must match the column accessors defined above.
-    const data = useMemo(
+    const overrideData = useMemo(
       () => [{
         entityName: "myHostGroup",
         threshold: 90,
@@ -102,6 +102,7 @@ export const DetailedView = ({
     ],
       []
     );
+  
   return (
       <Page.DetailView preferredWidth={1000}
         style={{ display: 'flex', flexDirection: 'column' }}
@@ -141,14 +142,15 @@ export const DetailedView = ({
               <Surface>
               <Flex justifyContent="start">
                 {/* <ToggleButtonGroup value={rowDensity} onChange={setRowDensity}> */}
+                {/* Add functionality to the toggle group */}
                 <ToggleButtonGroup>
-                  <ToggleButtonGroupItem value="HostGroups">Host Groups</ToggleButtonGroupItem>
+                  <ToggleButtonGroupItem value="HostGroups">Host Groups</ToggleButtonGroupItem> 
                   <ToggleButtonGroupItem value="Hosts">Hosts</ToggleButtonGroupItem>
                 </ToggleButtonGroup>
                 </Flex>
                 <DataTableV2 
-                  columns={columns} 
-                  data={data} 
+                  columns={overrideColumns} 
+                  data={overrideData} 
                   variant={{ verticalDividers: true }} 
                   resizable
                   fullWidth
@@ -157,6 +159,15 @@ export const DetailedView = ({
             </Tab>
             <Tab title="Problems">
               Recent {title} problems in the environment
+              <ProblemCard
+                displayId={"P-25031544"}
+                name={"CPU Saturation"}
+                duration={"32 m"}
+                startTime = {"Mar 7, 2025, 9:23 AM"}
+                category = {"Resource contention"}
+                rootCause={"hostName27"}
+                affectedCount={1}
+              />
             </Tab>
             <Tab title="Revision history">
               Recent configuration changes
