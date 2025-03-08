@@ -2251,3 +2251,7 @@
 2025-03-07T15:32:27.322Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
 2025-03-07T15:32:27.323Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3Dc74e9ea6-0965-4a28-9d05-28686be9e7ad&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
 2025-03-07T15:32:27.323Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-07T15:32:56.678Z ERROR Error: Terminal interrupt signal
+2025-03-07T15:32:56.678Z DEBUG [TELEMETRY] Not reporting this specific error
+2025-03-07T15:32:56.679Z DEBUG [TELEMETRY] Closing OpenKit connection
+2025-03-07T15:32:56.961Z DEBUG [TELEMETRY] Successfully closed OpenKit connection

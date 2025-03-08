@@ -20,10 +20,18 @@ const ProblemName = styled("div")`
   font-weight: ${Typography.Heading.Level5.Weight};
 `;
 
-const ProblemPropKey = styled("div")`
-  font-family: ${Typography.Heading.Level5.Family};
-  font-size: ${Typography.Heading.Level5.Size};
-  font-weight: ${Typography.Subtitle.Display.Level1.Weight};
+const ProblemProp = styled("div")`
+  font-family: ${Typography.Text.Small.Default.Family};
+  font-size: ${Typography.Text.Small.Default.Size};
+  font-weight: ${Typography.Text.Small.Default.Weight};
+`;
+
+const Key = styled("span")`
+  font-weight: ${Typography.Text.Small.Emphasized.Weight};
+`;
+const Value = styled("span")`
+  font-weight: ${Typography.Text.Small.Default.Weight};
+  color: ${Colors.Text.Neutral.Subdued};
 `;
 
 export const ProblemCard = ({ displayId, name, duration, startTime, category, rootCause, affectedCount }) => {
@@ -34,16 +42,17 @@ export const ProblemCard = ({ displayId, name, duration, startTime, category, ro
       flexDirection="column"
       alignItems="start"
       justifyContent="left"
-      gap={8}
+      gap={2}
     >
-      {/* Need to make the keys bold but not the values */}
       <ProblemId> {displayId} </ProblemId>
       <ProblemName>{name}</ProblemName>
-      <ProblemPropKey>Duration:</ProblemPropKey> {duration}
-      <ProblemPropKey>Started:</ProblemPropKey> {startTime}
-      <ProblemPropKey>Category:</ProblemPropKey> {category}
-      <ProblemPropKey>Root cause:</ProblemPropKey> {rootCause}
-      <ProblemPropKey>Affected:</ProblemPropKey> {affectedCount}
+      <div>
+        <ProblemProp><Key>Duration:</Key><Value> {duration}</Value></ProblemProp>
+        <ProblemProp><Key>Started:</Key><Value> {startTime}</Value></ProblemProp>
+        <ProblemProp><Key>Category:</Key><Value> {category}</Value></ProblemProp>
+        <ProblemProp><Key>Root cause:</Key><Value> {rootCause}</Value></ProblemProp>
+        <ProblemProp><Key>Affected:</Key><Value> {affectedCount}</Value></ProblemProp>
+    </div>
     </Flex> 
     </Container>
   );

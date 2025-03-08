@@ -24,7 +24,6 @@ const SidebarItem = styled("div")<{ selected?: boolean; main?: boolean }>`
         : Colors.Theme.Primary[90]
       : Colors.Text.Neutral.Default};
   transition: background-color 0.3s, color 0.3s;
-
   &:hover {
     background-color: ${(props) =>
       props.main ? "transparent" : Colors.Theme.Neutral[40]};
