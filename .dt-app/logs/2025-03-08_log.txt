@@ -661,3 +661,537 @@
 2025-03-08T10:20:35.324Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
 2025-03-08T10:20:35.325Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
 2025-03-08T10:20:35.325Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:31:17.922Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-08T10:31:21.211Z INFO > C:/Users/cameron.leong/OneDrive - Dynatrace/SettingsApp/settings-observability/src/app/components/MainContent.tsx:93:20 - Error: TS2322 Type '{ columns: DataTableV2ColumnDef<{ setting: string; threshold: number; 'sliding window': number; overrides: Date; }>[]; data: { setting: string; threshold: number; 'sliding window': number; overrides: Date; }[]; }' is not assignable to type 'IntrinsicAttributes'.
+  Property 'columns' does not exist on type 'IntrinsicAttributes'.
+  91 |         </TitleBar>
+  92 |         <LevelToggle toggleGroups={toggleGroups}/>
+> 93 |         <DataTable columns={columns} data={data} />
+     |                    ^
+  94 |       </Page.Main>
+  95 |
+  96 |   );
+2025-03-08T10:31:21.212Z DEBUG [TYPE_CHECKER] Watch status change: message TS6193: Found 1 error. Watching for file changes.
+
+2025-03-08T10:31:24.476Z INFO Ui build finished successfully.
+2025-03-08T10:31:24.505Z DEBUG [BUILD_TIME] Built UI in 2731.967999994755ms.
+2025-03-08T10:31:24.505Z INFO Reloading browser
+2025-03-08T10:31:25.222Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:31:25.222Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:31:25.222Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:31:25.225Z DEBUG [AUTH] OAuth2 token expired with a value of: -412.225 seconds
+2025-03-08T10:31:29.604Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:31:29.605Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:31:29.605Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:31:29.754Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:31:29.754Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:31:29.755Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:31:31.760Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:31:31.761Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:31:31.761Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:32:12.777Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-08T10:32:16.848Z INFO > C:/Users/cameron.leong/OneDrive - Dynatrace/SettingsApp/settings-observability/src/app/components/DetailedView.tsx:152:16 - Error: TS2741 Property 'overrideStatus' is missing in type '{ displayId: string; name: string; duration: string; startTime: string; category: string; rootCause: string; affectedCount: number; }' but required in type '{ displayId: any; name: any; duration: any; startTime: any; category: any; rootCause: any; affectedCount: any; overrideStatus: any; }'.
+  150 |             <Tab title="Problems">
+  151 |               <Subheading>CPU Saturation Problems</Subheading>
+> 152 |               <ProblemCard
+      |                ^
+  153 |                 displayId={"P-25031544"}
+  154 |                 name={"CPU Saturation"}
+  155 |                 duration={"32 m"}
+2025-03-08T10:32:16.855Z INFO > C:/Users/cameron.leong/OneDrive - Dynatrace/SettingsApp/settings-observability/src/app/components/MainContent.tsx:93:20 - Error: TS2322 Type '{ columns: DataTableV2ColumnDef<{ setting: string; threshold: number; 'sliding window': number; overrides: Date; }>[]; data: { setting: string; threshold: number; 'sliding window': number; overrides: Date; }[]; }' is not assignable to type 'IntrinsicAttributes'.
+  Property 'columns' does not exist on type 'IntrinsicAttributes'.
+  91 |         </TitleBar>
+  92 |         <LevelToggle toggleGroups={toggleGroups}/>
+> 93 |         <DataTable columns={columns} data={data} />
+     |                    ^
+  94 |       </Page.Main>
+  95 |
+  96 |   );
+2025-03-08T10:32:16.856Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 2 errors. Watching for file changes.
+
+2025-03-08T10:32:16.939Z INFO Ui build finished successfully.
+2025-03-08T10:32:16.970Z DEBUG [BUILD_TIME] Built UI in 4398.474099993706ms.
+2025-03-08T10:32:16.971Z INFO Reloading browser
+2025-03-08T10:32:17.238Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:32:17.239Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:32:17.239Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:32:18.932Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:32:18.933Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:32:18.933Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:32:18.942Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:32:18.942Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:32:18.942Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:32:20.644Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:32:20.645Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:32:20.645Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:32:23.039Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-08T10:32:26.831Z INFO > C:/Users/cameron.leong/OneDrive - Dynatrace/SettingsApp/settings-observability/src/app/components/MainContent.tsx:93:20 - Error: TS2322 Type '{ columns: DataTableV2ColumnDef<{ setting: string; threshold: number; 'sliding window': number; overrides: Date; }>[]; data: { setting: string; threshold: number; 'sliding window': number; overrides: Date; }[]; }' is not assignable to type 'IntrinsicAttributes'.
+  Property 'columns' does not exist on type 'IntrinsicAttributes'.
+  91 |         </TitleBar>
+  92 |         <LevelToggle toggleGroups={toggleGroups}/>
+> 93 |         <DataTable columns={columns} data={data} />
+     |                    ^
+  94 |       </Page.Main>
+  95 |
+  96 |   );
+2025-03-08T10:32:26.832Z DEBUG [TYPE_CHECKER] Watch status change: message TS6193: Found 1 error. Watching for file changes.
+
+2025-03-08T10:32:26.906Z INFO Ui build finished successfully.
+2025-03-08T10:32:26.936Z DEBUG [BUILD_TIME] Built UI in 4143.094900012016ms.
+2025-03-08T10:32:26.936Z INFO Reloading browser
+2025-03-08T10:32:27.187Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:32:27.187Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:32:27.187Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:32:29.225Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:32:29.225Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:32:29.225Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:32:29.466Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:32:29.466Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:32:29.466Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:32:31.173Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:32:31.173Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:32:31.173Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:32:53.128Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-08T10:32:57.086Z INFO > C:/Users/cameron.leong/OneDrive - Dynatrace/SettingsApp/settings-observability/src/app/components/MainContent.tsx:93:20 - Error: TS2322 Type '{ columns: DataTableV2ColumnDef<{ setting: string; threshold: number; 'sliding window': number; overrides: Date; }>[]; data: { setting: string; threshold: number; 'sliding window': number; overrides: Date; }[]; }' is not assignable to type 'IntrinsicAttributes'.
+  Property 'columns' does not exist on type 'IntrinsicAttributes'.
+  91 |         </TitleBar>
+  92 |         <LevelToggle toggleGroups={toggleGroups}/>
+> 93 |         <DataTable columns={columns} data={data} />
+     |                    ^
+  94 |       </Page.Main>
+  95 |
+  96 |   );
+2025-03-08T10:32:57.086Z DEBUG [TYPE_CHECKER] Watch status change: message TS6193: Found 1 error. Watching for file changes.
+
+2025-03-08T10:32:57.576Z INFO Ui build finished successfully.
+2025-03-08T10:32:57.595Z DEBUG [BUILD_TIME] Built UI in 4522.279200017452ms.
+2025-03-08T10:32:57.596Z INFO Reloading browser
+2025-03-08T10:32:57.730Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:32:57.730Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:32:57.730Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:32:59.485Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:32:59.485Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:32:59.485Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:33:00.000Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:33:00.000Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:33:00.000Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:33:00.440Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:33:00.440Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:33:00.440Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:41:53.153Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-08T10:41:56.808Z INFO > C:/Users/cameron.leong/OneDrive - Dynatrace/SettingsApp/settings-observability/src/app/components/MainContent.tsx:93:20 - Error: TS2322 Type '{ columns: DataTableV2ColumnDef<{ setting: string; threshold: number; 'sliding window': number; overrides: Date; }>[]; data: { setting: string; threshold: number; 'sliding window': number; overrides: Date; }[]; }' is not assignable to type 'IntrinsicAttributes'.
+  Property 'columns' does not exist on type 'IntrinsicAttributes'.
+  91 |         </TitleBar>
+  92 |         <LevelToggle toggleGroups={toggleGroups}/>
+> 93 |         <DataTable columns={columns} data={data} />
+     |                    ^
+  94 |       </Page.Main>
+  95 |
+  96 |   );
+2025-03-08T10:41:56.808Z DEBUG [TYPE_CHECKER] Watch status change: message TS6193: Found 1 error. Watching for file changes.
+
+2025-03-08T10:41:56.900Z INFO Ui build finished successfully.
+2025-03-08T10:41:56.937Z DEBUG [BUILD_TIME] Built UI in 3851.0788999795914ms.
+2025-03-08T10:41:56.938Z INFO Reloading browser
+2025-03-08T10:41:57.536Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:41:57.536Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:41:57.536Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:41:57.538Z DEBUG [AUTH] OAuth2 token expired with a value of: -330.538 seconds
+2025-03-08T10:42:01.041Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:42:01.042Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:42:01.042Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:42:01.397Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:42:01.397Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:42:01.397Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:42:03.193Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:42:03.193Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:42:03.193Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:42:04.706Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-08T10:42:09.258Z INFO > C:/Users/cameron.leong/OneDrive - Dynatrace/SettingsApp/settings-observability/src/app/components/MainContent.tsx:93:20 - Error: TS2322 Type '{ columns: DataTableV2ColumnDef<{ setting: string; threshold: number; 'sliding window': number; overrides: Date; }>[]; data: { setting: string; threshold: number; 'sliding window': number; overrides: Date; }[]; }' is not assignable to type 'IntrinsicAttributes'.
+  Property 'columns' does not exist on type 'IntrinsicAttributes'.
+  91 |         </TitleBar>
+  92 |         <LevelToggle toggleGroups={toggleGroups}/>
+> 93 |         <DataTable columns={columns} data={data} />
+     |                    ^
+  94 |       </Page.Main>
+  95 |
+  96 |   );
+2025-03-08T10:42:09.258Z DEBUG [TYPE_CHECKER] Watch status change: message TS6193: Found 1 error. Watching for file changes.
+
+2025-03-08T10:42:09.358Z INFO Ui build finished successfully.
+2025-03-08T10:42:09.382Z DEBUG [BUILD_TIME] Built UI in 4833.519199967384ms.
+2025-03-08T10:42:09.386Z INFO Reloading browser
+2025-03-08T10:42:09.534Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:42:09.534Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:42:09.534Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:42:11.168Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:42:11.168Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:42:11.168Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:42:11.267Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:42:11.267Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:42:11.267Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:42:12.853Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:42:12.853Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:42:12.854Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:45:23.819Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-08T10:45:28.035Z INFO > C:/Users/cameron.leong/OneDrive - Dynatrace/SettingsApp/settings-observability/src/app/components/MainContent.tsx:93:20 - Error: TS2322 Type '{ columns: DataTableV2ColumnDef<{ setting: string; threshold: number; 'sliding window': number; overrides: Date; }>[]; data: { setting: string; threshold: number; 'sliding window': number; overrides: Date; }[]; }' is not assignable to type 'IntrinsicAttributes'.
+  Property 'columns' does not exist on type 'IntrinsicAttributes'.
+  91 |         </TitleBar>
+  92 |         <LevelToggle toggleGroups={toggleGroups}/>
+> 93 |         <DataTable columns={columns} data={data} />
+     |                    ^
+  94 |       </Page.Main>
+  95 |
+  96 |   );
+2025-03-08T10:45:28.036Z DEBUG [TYPE_CHECKER] Watch status change: message TS6193: Found 1 error. Watching for file changes.
+
+2025-03-08T10:45:28.484Z INFO Ui build finished successfully.
+2025-03-08T10:45:28.513Z DEBUG [BUILD_TIME] Built UI in 4815.4742000103ms.
+2025-03-08T10:45:28.514Z INFO Reloading browser
+2025-03-08T10:45:29.072Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:45:29.072Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:45:29.073Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:45:30.672Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:45:30.672Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:45:30.672Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:45:30.823Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:45:30.823Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:45:30.823Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:45:32.512Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:45:32.512Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:45:32.512Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:46:13.849Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-08T10:46:17.227Z INFO > C:/Users/cameron.leong/OneDrive - Dynatrace/SettingsApp/settings-observability/src/app/components/MainContent.tsx:93:20 - Error: TS2322 Type '{ columns: DataTableV2ColumnDef<{ setting: string; threshold: number; 'sliding window': number; overrides: Date; }>[]; data: { setting: string; threshold: number; 'sliding window': number; overrides: Date; }[]; }' is not assignable to type 'IntrinsicAttributes'.
+  Property 'columns' does not exist on type 'IntrinsicAttributes'.
+  91 |         </TitleBar>
+  92 |         <LevelToggle toggleGroups={toggleGroups}/>
+> 93 |         <DataTable columns={columns} data={data} />
+     |                    ^
+  94 |       </Page.Main>
+  95 |
+  96 |   );
+2025-03-08T10:46:17.228Z DEBUG [TYPE_CHECKER] Watch status change: message TS6193: Found 1 error. Watching for file changes.
+
+2025-03-08T10:46:17.351Z INFO Ui build finished successfully.
+2025-03-08T10:46:17.385Z DEBUG [BUILD_TIME] Built UI in 3621.219000041485ms.
+2025-03-08T10:46:17.386Z INFO Reloading browser
+2025-03-08T10:46:17.540Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:46:17.540Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:46:17.540Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:46:17.543Z DEBUG [AUTH] OAuth2 token expired with a value of: 41.457 seconds
+2025-03-08T10:46:21.051Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:46:21.051Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:46:21.051Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:46:21.197Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:46:21.197Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:46:21.197Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:46:22.773Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:46:22.773Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:46:22.773Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:47:27.771Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-08T10:47:31.389Z INFO > C:/Users/cameron.leong/OneDrive - Dynatrace/SettingsApp/settings-observability/src/app/components/MainContent.tsx:93:20 - Error: TS2322 Type '{ columns: DataTableV2ColumnDef<{ setting: string; threshold: number; 'sliding window': number; overrides: Date; }>[]; data: { setting: string; threshold: number; 'sliding window': number; overrides: Date; }[]; }' is not assignable to type 'IntrinsicAttributes'.
+  Property 'columns' does not exist on type 'IntrinsicAttributes'.
+  91 |         </TitleBar>
+  92 |         <LevelToggle toggleGroups={toggleGroups}/>
+> 93 |         <DataTable columns={columns} data={data} />
+     |                    ^
+  94 |       </Page.Main>
+  95 |
+  96 |   );
+2025-03-08T10:47:31.389Z DEBUG [TYPE_CHECKER] Watch status change: message TS6193: Found 1 error. Watching for file changes.
+
+2025-03-08T10:47:31.460Z INFO Ui build finished successfully.
+2025-03-08T10:47:31.489Z DEBUG [BUILD_TIME] Built UI in 3762.509700000286ms.
+2025-03-08T10:47:31.490Z INFO Reloading browser
+2025-03-08T10:47:31.722Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:47:31.722Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:47:31.722Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:47:33.460Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:47:33.461Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:47:33.461Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:47:33.643Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:47:33.644Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:47:33.644Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:47:35.323Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:47:35.324Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:47:35.324Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:47:52.253Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-08T10:47:56.572Z INFO > C:/Users/cameron.leong/OneDrive - Dynatrace/SettingsApp/settings-observability/src/app/components/MainContent.tsx:93:20 - Error: TS2322 Type '{ columns: DataTableV2ColumnDef<{ setting: string; threshold: number; 'sliding window': number; overrides: Date; }>[]; data: { setting: string; threshold: number; 'sliding window': number; overrides: Date; }[]; }' is not assignable to type 'IntrinsicAttributes'.
+  Property 'columns' does not exist on type 'IntrinsicAttributes'.
+  91 |         </TitleBar>
+  92 |         <LevelToggle toggleGroups={toggleGroups}/>
+> 93 |         <DataTable columns={columns} data={data} />
+     |                    ^
+  94 |       </Page.Main>
+  95 |
+  96 |   );
+2025-03-08T10:47:56.573Z DEBUG [TYPE_CHECKER] Watch status change: message TS6193: Found 1 error. Watching for file changes.
+
+2025-03-08T10:47:56.643Z INFO Ui build finished successfully.
+2025-03-08T10:47:56.662Z DEBUG [BUILD_TIME] Built UI in 4488.646899998188ms.
+2025-03-08T10:47:56.663Z INFO Reloading browser
+2025-03-08T10:47:56.756Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:47:56.756Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:47:56.756Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:47:58.546Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:47:58.546Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:47:58.546Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:47:58.669Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:47:58.669Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:47:58.669Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:48:00.170Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:48:00.170Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:48:00.171Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:48:34.841Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-08T10:48:40.099Z INFO > C:/Users/cameron.leong/OneDrive - Dynatrace/SettingsApp/settings-observability/src/app/components/MainContent.tsx:93:20 - Error: TS2322 Type '{ columns: DataTableV2ColumnDef<{ setting: string; threshold: number; 'sliding window': number; overrides: Date; }>[]; data: { setting: string; threshold: number; 'sliding window': number; overrides: Date; }[]; }' is not assignable to type 'IntrinsicAttributes'.
+  Property 'columns' does not exist on type 'IntrinsicAttributes'.
+  91 |         </TitleBar>
+  92 |         <LevelToggle toggleGroups={toggleGroups}/>
+> 93 |         <DataTable columns={columns} data={data} />
+     |                    ^
+  94 |       </Page.Main>
+  95 |
+  96 |   );
+2025-03-08T10:48:40.099Z DEBUG [TYPE_CHECKER] Watch status change: message TS6193: Found 1 error. Watching for file changes.
+
+2025-03-08T10:48:40.197Z INFO Ui build finished successfully.
+2025-03-08T10:48:40.238Z DEBUG [BUILD_TIME] Built UI in 5376.0173000097275ms.
+2025-03-08T10:48:40.240Z INFO Reloading browser
+2025-03-08T10:48:40.375Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:48:40.375Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:48:40.375Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:48:41.939Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:48:41.939Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:48:41.939Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:48:42.141Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:48:42.141Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:48:42.141Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:51:37.530Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-08T10:51:40.832Z INFO > C:/Users/cameron.leong/OneDrive - Dynatrace/SettingsApp/settings-observability/src/app/components/MainContent.tsx:93:20 - Error: TS2322 Type '{ columns: DataTableV2ColumnDef<{ setting: string; threshold: number; 'sliding window': number; overrides: Date; }>[]; data: { setting: string; threshold: number; 'sliding window': number; overrides: Date; }[]; }' is not assignable to type 'IntrinsicAttributes'.
+  Property 'columns' does not exist on type 'IntrinsicAttributes'.
+  91 |         </TitleBar>
+  92 |         <LevelToggle toggleGroups={toggleGroups}/>
+> 93 |         <DataTable columns={columns} data={data} />
+     |                    ^
+  94 |       </Page.Main>
+  95 |
+  96 |   );
+2025-03-08T10:51:40.833Z DEBUG [TYPE_CHECKER] Watch status change: message TS6193: Found 1 error. Watching for file changes.
+
+2025-03-08T10:51:40.912Z INFO Ui build finished successfully.
+2025-03-08T10:51:40.938Z DEBUG [BUILD_TIME] Built UI in 3579.9682000279427ms.
+2025-03-08T10:51:40.938Z INFO Reloading browser
+2025-03-08T10:51:41.523Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:51:41.524Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:51:41.524Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:51:41.527Z DEBUG [AUTH] OAuth2 token expired with a value of: -22.527 seconds
+2025-03-08T10:51:45.228Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:51:45.229Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:51:45.229Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:51:45.395Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:51:45.395Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:51:45.395Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:51:46.987Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:51:46.987Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:51:46.987Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:52:09.836Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-08T10:52:15.051Z INFO > C:/Users/cameron.leong/OneDrive - Dynatrace/SettingsApp/settings-observability/src/app/components/MainContent.tsx:93:20 - Error: TS2322 Type '{ columns: DataTableV2ColumnDef<{ setting: string; threshold: number; 'sliding window': number; overrides: Date; }>[]; data: { setting: string; threshold: number; 'sliding window': number; overrides: Date; }[]; }' is not assignable to type 'IntrinsicAttributes'.
+  Property 'columns' does not exist on type 'IntrinsicAttributes'.
+  91 |         </TitleBar>
+  92 |         <LevelToggle toggleGroups={toggleGroups}/>
+> 93 |         <DataTable columns={columns} data={data} />
+     |                    ^
+  94 |       </Page.Main>
+  95 |
+  96 |   );
+2025-03-08T10:52:15.052Z DEBUG [TYPE_CHECKER] Watch status change: message TS6193: Found 1 error. Watching for file changes.
+
+2025-03-08T10:52:15.159Z INFO Ui build finished successfully.
+2025-03-08T10:52:15.190Z DEBUG [BUILD_TIME] Built UI in 5407.328700006008ms.
+2025-03-08T10:52:15.191Z INFO Reloading browser
+2025-03-08T10:52:15.434Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:52:15.434Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:52:15.435Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:52:16.963Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:52:16.964Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:52:16.964Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:52:17.240Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:52:17.240Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:52:17.240Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:52:18.827Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:52:18.828Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:52:18.828Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:53:33.407Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-08T10:53:36.916Z INFO > C:/Users/cameron.leong/OneDrive - Dynatrace/SettingsApp/settings-observability/src/app/components/MainContent.tsx:93:20 - Error: TS2322 Type '{ columns: DataTableV2ColumnDef<{ setting: string; threshold: number; 'sliding window': number; overrides: Date; }>[]; data: { setting: string; threshold: number; 'sliding window': number; overrides: Date; }[]; }' is not assignable to type 'IntrinsicAttributes'.
+  Property 'columns' does not exist on type 'IntrinsicAttributes'.
+  91 |         </TitleBar>
+  92 |         <LevelToggle toggleGroups={toggleGroups}/>
+> 93 |         <DataTable columns={columns} data={data} />
+     |                    ^
+  94 |       </Page.Main>
+  95 |
+  96 |   );
+2025-03-08T10:53:36.916Z DEBUG [TYPE_CHECKER] Watch status change: message TS6193: Found 1 error. Watching for file changes.
+
+2025-03-08T10:53:36.999Z INFO Ui build finished successfully.
+2025-03-08T10:53:37.035Z DEBUG [BUILD_TIME] Built UI in 3624.7143999934196ms.
+2025-03-08T10:53:37.036Z INFO Reloading browser
+2025-03-08T10:53:37.640Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:53:37.640Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:53:37.641Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:53:39.255Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:53:39.256Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:53:39.256Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:53:39.420Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:53:39.420Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:53:39.420Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:53:41.245Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:53:41.246Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:53:41.246Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:57:32.192Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-08T10:57:36.524Z INFO > C:/Users/cameron.leong/OneDrive - Dynatrace/SettingsApp/settings-observability/src/app/components/MainContent.tsx:93:20 - Error: TS2322 Type '{ columns: DataTableV2ColumnDef<{ setting: string; threshold: number; 'sliding window': number; overrides: Date; }>[]; data: { setting: string; threshold: number; 'sliding window': number; overrides: Date; }[]; }' is not assignable to type 'IntrinsicAttributes'.
+  Property 'columns' does not exist on type 'IntrinsicAttributes'.
+  91 |         </TitleBar>
+  92 |         <LevelToggle toggleGroups={toggleGroups}/>
+> 93 |         <DataTable columns={columns} data={data} />
+     |                    ^
+  94 |       </Page.Main>
+  95 |
+  96 |   );
+2025-03-08T10:57:36.524Z DEBUG [TYPE_CHECKER] Watch status change: message TS6193: Found 1 error. Watching for file changes.
+
+2025-03-08T10:57:37.422Z INFO Ui build finished successfully.
+2025-03-08T10:57:37.453Z DEBUG [BUILD_TIME] Built UI in 5274.04129999876ms.
+2025-03-08T10:57:37.454Z INFO Reloading browser
+2025-03-08T10:57:38.086Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:57:38.087Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:57:38.087Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:57:38.089Z DEBUG [AUTH] OAuth2 token expired with a value of: -55.089 seconds
+2025-03-08T10:57:41.397Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:57:41.397Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:57:41.397Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:57:41.591Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:57:41.592Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:57:41.592Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T10:57:43.140Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T10:57:43.140Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T10:57:43.140Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T11:07:36.684Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-08T11:07:37.740Z INFO > C:/Users/cameron.leong/OneDrive - Dynatrace/SettingsApp/settings-observability/src/app/components/MainContent.tsx:93:20 - Error: TS2322 Type '{ columns: DataTableV2ColumnDef<{ setting: string; threshold: number; 'sliding window': number; overrides: Date; }>[]; data: { setting: string; threshold: number; 'sliding window': number; overrides: Date; }[]; }' is not assignable to type 'IntrinsicAttributes'.
+  Property 'columns' does not exist on type 'IntrinsicAttributes'.
+  91 |         </TitleBar>
+  92 |         <LevelToggle toggleGroups={toggleGroups}/>
+> 93 |         <DataTable columns={columns} data={data} />
+     |                    ^
+  94 |       </Page.Main>
+  95 |
+  96 |   );
+2025-03-08T11:07:37.740Z DEBUG [TYPE_CHECKER] Watch status change: message TS6193: Found 1 error. Watching for file changes.
+
+2025-03-08T11:07:40.366Z INFO Ui build finished successfully.
+2025-03-08T11:07:40.400Z DEBUG [BUILD_TIME] Built UI in 3880.214000046253ms.
+2025-03-08T11:07:40.401Z INFO Reloading browser
+2025-03-08T11:07:41.009Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T11:07:41.009Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T11:07:41.009Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T11:07:41.012Z DEBUG [AUTH] OAuth2 token expired with a value of: -302.012 seconds
+2025-03-08T11:07:44.347Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T11:07:44.347Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T11:07:44.348Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T11:07:44.526Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T11:07:44.526Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T11:07:44.526Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T11:07:46.183Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T11:07:46.183Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T11:07:46.183Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T11:19:41.048Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-08T11:19:41.656Z INFO > C:/Users/cameron.leong/OneDrive - Dynatrace/SettingsApp/settings-observability/src/app/components/MainContent.tsx:93:20 - Error: TS2322 Type '{ columns: DataTableV2ColumnDef<{ setting: string; threshold: number; 'sliding window': number; overrides: Date; }>[]; data: { setting: string; threshold: number; 'sliding window': number; overrides: Date; }[]; }' is not assignable to type 'IntrinsicAttributes'.
+  Property 'columns' does not exist on type 'IntrinsicAttributes'.
+  91 |         </TitleBar>
+  92 |         <LevelToggle toggleGroups={toggleGroups}/>
+> 93 |         <DataTable columns={columns} data={data} />
+     |                    ^
+  94 |       </Page.Main>
+  95 |
+  96 |   );
+2025-03-08T11:19:41.656Z DEBUG [TYPE_CHECKER] Watch status change: message TS6193: Found 1 error. Watching for file changes.
+
+2025-03-08T11:19:44.019Z INFO Ui build finished successfully.
+2025-03-08T11:19:44.096Z DEBUG [BUILD_TIME] Built UI in 2954.1766000390053ms.
+2025-03-08T11:19:44.100Z INFO Reloading browser
+2025-03-08T11:19:44.878Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T11:19:44.878Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T11:19:44.878Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T11:19:44.882Z DEBUG [AUTH] OAuth2 token expired with a value of: -422.882 seconds
+2025-03-08T11:19:48.439Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T11:19:48.439Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T11:19:48.439Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T11:19:48.666Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T11:19:48.666Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T11:19:48.666Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T11:19:50.224Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T11:19:50.224Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T11:19:50.224Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T11:29:32.760Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-08T11:29:37.478Z INFO > C:/Users/cameron.leong/OneDrive - Dynatrace/SettingsApp/settings-observability/src/app/components/MainContent.tsx:93:20 - Error: TS2322 Type '{ columns: DataTableV2ColumnDef<{ setting: string; threshold: number; 'sliding window': number; overrides: Date; }>[]; data: { setting: string; threshold: number; 'sliding window': number; overrides: Date; }[]; }' is not assignable to type 'IntrinsicAttributes'.
+  Property 'columns' does not exist on type 'IntrinsicAttributes'.
+  91 |         </TitleBar>
+  92 |         <LevelToggle toggleGroups={toggleGroups}/>
+> 93 |         <DataTable columns={columns} data={data} />
+     |                    ^
+  94 |       </Page.Main>
+  95 |
+  96 |   );
+2025-03-08T11:29:37.478Z DEBUG [TYPE_CHECKER] Watch status change: message TS6193: Found 1 error. Watching for file changes.
+
+2025-03-08T11:29:38.871Z INFO Ui build finished successfully.
+2025-03-08T11:29:38.901Z DEBUG [BUILD_TIME] Built UI in 6324.9832000136375ms.
+2025-03-08T11:29:38.903Z INFO Reloading browser
+2025-03-08T11:29:39.594Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T11:29:39.594Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T11:29:39.594Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T11:29:39.597Z DEBUG [AUTH] OAuth2 token expired with a value of: -293.597 seconds
+2025-03-08T11:29:43.670Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T11:29:43.670Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T11:29:43.670Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T11:29:43.772Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T11:29:43.772Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T11:29:43.772Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T11:29:45.353Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-08T11:29:45.353Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3De3cd3f0d-ef42-4656-8aac-f2444fb7b3ae&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-08T11:29:45.353Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-08T11:30:35.277Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-08T11:30:39.558Z INFO > C:/Users/cameron.leong/OneDrive - Dynatrace/SettingsApp/settings-observability/src/app/components/MainContent.tsx:93:20 - Error: TS2322 Type '{ columns: DataTableV2ColumnDef<{ setting: string; threshold: number; 'sliding window': number; overrides: Date; }>[]; data: { setting: string; threshold: number; 'sliding window': number; overrides: Date; }[]; }' is not assignable to type 'IntrinsicAttributes'.
+  Property 'columns' does not exist on type 'IntrinsicAttributes'.
+  91 |         </TitleBar>
+  92 |         <LevelToggle toggleGroups={toggleGroups}/>
+> 93 |         <DataTable columns={columns} data={data} />
+     |                    ^
+  94 |       </Page.Main>
+  95 |
+  96 |   );
+2025-03-08T11:30:39.558Z DEBUG [TYPE_CHECKER] Watch status change: message TS6193: Found 1 error. Watching for file changes.
+
+2025-03-08T11:30:39.578Z ERROR Error: Terminal interrupt signal
+2025-03-08T11:30:39.578Z DEBUG [TELEMETRY] Not reporting this specific error
+2025-03-08T11:30:39.579Z DEBUG [TELEMETRY] Closing OpenKit connection
+2025-03-08T11:30:40.731Z DEBUG [TELEMETRY] Successfully closed OpenKit connection

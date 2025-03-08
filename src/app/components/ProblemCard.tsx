@@ -7,6 +7,7 @@ import { Link as RouterLink } from "react-router-dom";
 import React from "react";
 import { Typography } from "@dynatrace/strato-design-tokens";
 import styled from "styled-components";
+import { Label } from "@dynatrace/strato-components-preview";
 
 const ProblemId = styled("div")`
   font-family: ${Typography.Heading.Level6.Family};
@@ -34,7 +35,7 @@ const Value = styled("span")`
   color: ${Colors.Text.Neutral.Subdued};
 `;
 
-export const ProblemCard = ({ displayId, name, duration, startTime, category, rootCause, affectedCount }) => {
+export const ProblemCard = ({ displayId, name, duration, startTime, category, rootCause, affectedCount, overrideStatus }) => {
 
   return (
     <Container>
@@ -52,7 +53,8 @@ export const ProblemCard = ({ displayId, name, duration, startTime, category, ro
         <ProblemProp><Key>Category:</Key><Value> {category}</Value></ProblemProp>
         <ProblemProp><Key>Root cause:</Key><Value> {rootCause}</Value></ProblemProp>
         <ProblemProp><Key>Affected:</Key><Value> {affectedCount}</Value></ProblemProp>
-    </div>
+        <ProblemProp><Key>Overriding global config:</Key><Value> {overrideStatus}</Value></ProblemProp>
+      </div>
     </Flex> 
     </Container>
   );

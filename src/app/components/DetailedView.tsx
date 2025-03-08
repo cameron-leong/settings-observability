@@ -20,24 +20,14 @@ import Borders from '@dynatrace/strato-design-tokens/borders';
 import Colors from '@dynatrace/strato-design-tokens/colors';
 import Spacings from '@dynatrace/strato-design-tokens/spacings';
 import { Tab, Tabs } from '@dynatrace/strato-components-preview/navigation';
-import { CriticalIcon, OfficeFilledIcon } from '@dynatrace/strato-icons';
+import { CriticalIcon, DavisAiSignetIcon, OfficeFilledIcon } from '@dynatrace/strato-icons';
 import { Typography } from '@dynatrace/strato-design-tokens';
 import {
   ToggleButtonGroup,
   ToggleButtonGroupItem,
 } from '@dynatrace/strato-components-preview/buttons';
 import { ProblemCard } from './ProblemCard';
-// const Placeholder = () => (
-//   <div
-//     style={{
-//       width: '100%',
-//       height: '100%',
-//       marginTop: Spacings.Size24,
-//       borderRadius: Borders.Radius.Container.Default,
-//       backgroundColor: Colors.Background.Container.Neutral.Default,
-//     }}
-//   />
-// );
+import { DataTable } from './DataTable';
 const Heading = styled("div")`
   font-family: ${Typography.Heading.Level1.Family};
   font-size: ${Typography.Heading.Level1.Size};
@@ -48,6 +38,12 @@ const Subheading = styled("div")`
   font-family: ${Typography.Heading.Level3.Family};
   font-size: ${Typography.Heading.Level3.Size};
   font-weight: ${Typography.Heading.Level3.Weight};
+`;
+const Subheading2 = styled("div")`
+  font-family: ${Typography.Text.Base.Default.Family};
+  font-size: ${Typography.Text.Base.Default.Size};
+  font-weight: ${Typography.Text.Base.Default.Weight};
+  color: ${Colors.Text.Neutral.Subdued}
 `;
 
 const icons = [<CriticalIcon style={{verticalAlign: 'middle', padding:4}}/>, <OfficeFilledIcon style={{verticalAlign: 'middle'}}/>]
@@ -98,6 +94,47 @@ export const DetailedView = ({
         threshold: 80,
         violatingSamples: 7,
         slidingWindow: 10
+      }
+    ],
+      []
+    );
+    const revisionHistoryColumns = useMemo<DataTableV2ColumnDef<(typeof overrideData)[number]>[]>(() => {
+      return [
+        {
+          id: 'Timestamp',
+          header: 'Timestamp',
+          accessor: 'timestamp'
+        },
+        {
+          id: 'User',
+          header: 'User',
+          accessor: 'user'
+        },
+        {
+          id: 'New configuration',
+          header: 'New configuration', 
+          accessor: 'newConfiguration'
+        },
+        {
+          id: 'Previous configuration',
+          header: 'Previous configuration',
+          accessor: 'previousConfiguration'
+        }
+      ];
+    }, []);
+    //Define the data that is to be displayed in the table. The keys must match the column accessors defined above.
+    const revisionHistoryData = useMemo(
+      () => [{
+        timestamp: "5:23 PM Mar 7, 2025",
+        user: "cameron.leong@dynatrace.com",
+        newConfiguration: "95% for 3 of 5 minutes",
+        previousConfiguration: "90% for 3 of 5 minutes"
+      },
+      {
+        timestamp: "4:12 PM Mar 3, 2025",
+        user: "ahmed.samay@dynatrace.com",
+        newConfiguration: "90% for 3 of 5 minutes",
+        previousConfiguration: "80% for 3 of 5 minutes"
       }
     ],
       []
@@ -158,19 +195,27 @@ export const DetailedView = ({
               </Surface>
             </Tab>
             <Tab title="Problems">
-              Recent {title} problems in the environment
-              <ProblemCard
-                displayId={"P-25031544"}
-                name={"CPU Saturation"}
-                duration={"32 m"}
-                startTime = {"Mar 7, 2025, 9:23 AM"}
-                category = {"Resource contention"}
-                rootCause={"hostName27"}
-                affectedCount={1}
-              />
+              <Flex flexDirection='column' gap={6}>
+                <Flex flexDirection='row' alignItems='center'>
+                  <DavisAiSignetIcon size="large"/>
+                  <Subheading>Problems</Subheading>
+                </Flex>
+                <Subheading2>1 active, 0 closed</Subheading2>
+                <ProblemCard
+                  displayId={"P-25031544"}
+                  name={"CPU Saturation"}
+                  duration={"32 m"}
+                  startTime = {"Mar 7, 2025, 9:23 AM"}
+                  category = {"Resource contention"}
+                  rootCause={"hostName27"}
+                  affectedCount={1}
+                  overrideStatus={"No"}
+                />
+              </Flex>
             </Tab>
             <Tab title="Revision history">
               Recent configuration changes
+              {/* Add data table */}
             </Tab>
           </Tabs>
 
