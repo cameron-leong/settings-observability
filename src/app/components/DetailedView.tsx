@@ -98,7 +98,7 @@ export const DetailedView = ({
     ],
       []
     );
-    const revisionHistoryColumns = useMemo<DataTableV2ColumnDef<(typeof overrideData)[number]>[]>(() => {
+    const revisionHistoryColumns = useMemo<DataTableV2ColumnDef<(typeof revisionHistoryData)[number]>[]>(() => {
       return [
         {
           id: 'Timestamp',
@@ -215,7 +215,7 @@ export const DetailedView = ({
             </Tab>
             <Tab title="Revision history">
               Recent configuration changes
-              {/* Add data table */}
+              <DataTable columns={revisionHistoryColumns} data={revisionHistoryData} />
             </Tab>
           </Tabs>
 
