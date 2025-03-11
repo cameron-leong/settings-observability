@@ -9,6 +9,7 @@ import { Typography } from "@dynatrace/strato-design-tokens";
 import styled from "styled-components";
 import { Label } from "@dynatrace/strato-components-preview";
 
+// Stylings for text
 const ProblemId = styled("div")`
   font-family: ${Typography.Heading.Level6.Family};
   font-size: ${Typography.Heading.Level6.Size};

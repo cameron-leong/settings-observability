@@ -25,20 +25,12 @@ export const Home = () => {
 
       <Flex gap={48} paddingTop={64} flexFlow="wrap">
         <Card
-          href="/anomalydetection"
+          href="/main"
           inAppLink
           imgSrc={
             theme === "light" ? "./assets/anomaly_logo_dark.svg" : "./assets/anomaly_logo_light.svg"
           }
-          name="Anomaly Detection Settings"
-        />
-        <Card
-          href="/operational"
-          inAppLink
-          imgSrc={
-            theme === "light" ? "./assets/operational_logo_dark.svg" : "./assets/operational_logo_light.svg"
-          }
-          name="Operational Settings"
+          name="Open Explorer"
         />
       </Flex>
     </Flex>
