@@ -502,3 +502,847 @@
 2025-03-11T13:42:10.732Z DEBUG [PLUGIN] Found d:\Dev\Settings Observability\settings-observability\app.config.json
 2025-03-11T13:42:10.865Z DEBUG [PLUGIN] Searching for configuration file
 2025-03-11T13:42:10.866Z DEBUG [PLUGIN] Found d:\Dev\Settings Observability\settings-observability\app.config.json
+2025-03-11T13:42:39.891Z DEBUG [TELEMETRY] Creating a new HTTP and HTTPS interceptor for tracing
+2025-03-11T13:42:39.891Z DEBUG [TELEMETRY] Successfully initialized OpenKit
+2025-03-11T13:42:39.891Z DEBUG [TELEMETRY] Telemetry enabled: Session ID "969232115017232800"
+2025-03-11T13:42:39.892Z DEBUG [TELEMETRY] Identification successful
+2025-03-11T13:42:40.201Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T13:42:40.201Z DEBUG [HTTP(S)] Execute GET request without allowing redirection to 'https://guu84124.apps.dynatrace.com/platform/oauth2/authorization/dynatrace-sso'
+2025-03-11T13:42:41.662Z DEBUG [HTTP(S)] Resolved URL is https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T13:42:41.662Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T13:42:41.663Z INFO  DT-APP:  Authenticate with Dynatrace SSO
+2025-03-11T13:42:41.851Z DEBUG [AUTH] SSO-link https://sso.dynatrace.com/oauth2/authorize?client_id=dt0s08.dt-app-local&redirect_uri=http%3A%2F%2Flocalhost%3A5343%2Fauth%2Flogin&state=771305f0250a976ef92d69cb29c230b96dca7bea&response_type=code&code_challenge_method=S256&code_challenge=4VmSFgwJnd6cZd3uDuTMleqkjCYL-DH8w7-KyWx4CqM&scope=app-engine%3Aapps%3Arun%20storage%3Alogs%3Aread%20storage%3Abuckets%3Aread
+2025-03-11T13:42:49.506Z DEBUG [AUTH] Received authorized code for oAuth
+2025-03-11T13:42:50.609Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T13:42:50.609Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T13:42:50.609Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T13:42:51.373Z INFO  DT-APP:  Started local development server
+2025-03-11T13:42:51.374Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T13:42:51.374Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T13:42:51.389Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T13:42:51.389Z INFO  DT-APP:  Authenticate with Dynatrace SSO
+2025-03-11T13:42:51.647Z DEBUG [TYPE_CHECKER] Watch status change: message TS6031: Starting compilation in watch mode...
+
+2025-03-11T13:42:57.213Z INFO > D:/Dev/Settings Observability/settings-observability/src/app/components/DetailedView.tsx:158:20 - Error: TS2741 Property 'enabled' is missing in type '{ format: string; threshold: number; violatingSamples: number; window: number; dealertingSamples: number; dealertingWindow: number; }' but required in type '{ format: any; threshold: any; violatingSamples: any; window: any; dealertingSamples: any; dealertingWindow: any; enabled: any; }'.
+  156 |                   style={{fontSize: '24px'}} //How to use Typography.Heading.Level1.Family instead?
+  157 |                 > 
+> 158 |                   <EnvironmentConfig 
+      |                    ^
+  159 |                     format={"standard"}
+  160 |                     threshold={95}
+  161 |                     violatingSamples={3}
+2025-03-11T13:42:57.214Z DEBUG [TYPE_CHECKER] Watch status change: message TS6193: Found 1 error. Watching for file changes.
+
+2025-03-11T13:42:57.843Z DEBUG [AUTH] SSO-link https://sso.dynatrace.com/oauth2/authorize?client_id=dt0s08.dt-app-local&redirect_uri=http%3A%2F%2Flocalhost%3A5343%2Fauth%2Flogin&state=771305f0250a976ef92d69cb29c230b96dca7bea&response_type=code&code_challenge_method=S256&code_challenge=4VmSFgwJnd6cZd3uDuTMleqkjCYL-DH8w7-KyWx4CqM
+2025-03-11T13:43:05.295Z DEBUG [AUTH] Received authorized code for oAuth
+2025-03-11T13:43:09.669Z INFO Initial ui build finished successfully.
+2025-03-11T13:43:09.739Z DEBUG [BUILD_TIME] Built UI in 12436.552300000003ms.
+2025-03-11T13:43:09.762Z INFO 
+────────────────────────────────────────────────────────────────────────────────
+
+  App Shell URL: https://guu84124.apps.dynatrace.com/ui/apps/local-dev-server/?locationAppIds=http%3A%2F%2Flocalhost%3A3000%2Fui%2Clocal-dev-server
+  Local URL: http://localhost:3000/ui
+  
+  Ready for development! 💻
+
+────────────────────────────────────────────────────────────────────────────────
+
+2025-03-11T13:43:12.262Z INFO  DT-APP:  
+    ╭──────────────────────────────────────────────────────────────╮
+    │                                                              │
+    │   Updates for @dynatrace packages available:                 │
+    │   @dynatrace/strato-components 0.85.100 → 0.85.120           │
+    │   @dynatrace/strato-components-preview 0.117.53 → 0.117.73   │
+    │   dt-app 0.136.3 → 0.137.1                                   │
+    │   To update, run npx dt-app update                           │
+    │                                                              │
+    ╰──────────────────────────────────────────────────────────────╯
+ 
+2025-03-11T13:43:13.666Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T13:43:13.666Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T13:43:13.666Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T13:43:51.970Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-11T13:43:52.276Z INFO > D:/Dev/Settings Observability/settings-observability/src/app/components/DetailedView.tsx:158:20 - Error: TS2741 Property 'enabled' is missing in type '{ format: string; threshold: number; violatingSamples: number; window: number; dealertingSamples: number; dealertingWindow: number; }' but required in type '{ format: any; threshold: any; violatingSamples: any; window: any; dealertingSamples: any; dealertingWindow: any; enabled: any; }'.
+  156 |                   style={{fontSize: '24px'}} //How to use Typography.Heading.Level1.Family instead?
+  157 |                 > 
+> 158 |                   <EnvironmentConfig 
+      |                    ^
+  159 |                     format={"standard"}
+  160 |                     threshold={95}
+  161 |                     violatingSamples={3}
+2025-03-11T13:43:52.276Z DEBUG [TYPE_CHECKER] Watch status change: message TS6193: Found 1 error. Watching for file changes.
+
+2025-03-11T13:43:55.791Z INFO Ui build finished successfully.
+2025-03-11T13:43:55.804Z DEBUG [BUILD_TIME] Built UI in 707.2146999999968ms.
+2025-03-11T13:43:55.804Z INFO Reloading browser
+2025-03-11T13:43:55.866Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T13:43:55.866Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T13:43:55.866Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T13:43:56.871Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T13:43:56.871Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T13:43:56.871Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T13:44:21.459Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-11T13:44:23.204Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-03-11T13:44:23.927Z INFO Ui build finished successfully.
+2025-03-11T13:44:23.944Z DEBUG [BUILD_TIME] Built UI in 720.5869999999995ms.
+2025-03-11T13:44:23.944Z INFO Reloading browser
+2025-03-11T13:44:23.994Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T13:44:23.994Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T13:44:23.995Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T13:44:24.849Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T13:44:24.849Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T13:44:24.849Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T13:44:51.325Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-11T13:44:53.042Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-03-11T13:44:53.091Z INFO Ui build finished successfully.
+2025-03-11T13:44:53.110Z DEBUG [BUILD_TIME] Built UI in 2016.4917999999889ms.
+2025-03-11T13:44:53.110Z INFO Reloading browser
+2025-03-11T13:44:53.166Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T13:44:53.166Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T13:44:53.166Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T13:44:54.172Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T13:44:54.172Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T13:44:54.172Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T13:45:31.611Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-11T13:45:33.305Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-03-11T13:45:33.337Z INFO Ui build finished successfully.
+2025-03-11T13:45:33.356Z DEBUG [BUILD_TIME] Built UI in 1925.5279000000155ms.
+2025-03-11T13:45:33.356Z INFO Reloading browser
+2025-03-11T13:45:33.417Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T13:45:33.417Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T13:45:33.417Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T13:45:34.156Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T13:45:34.156Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T13:45:34.156Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T13:46:10.914Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-11T13:46:12.540Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-03-11T13:46:12.573Z INFO Ui build finished successfully.
+2025-03-11T13:46:12.587Z DEBUG [BUILD_TIME] Built UI in 1871.1463000000222ms.
+2025-03-11T13:46:12.587Z INFO Reloading browser
+2025-03-11T13:46:12.632Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T13:46:12.632Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T13:46:12.632Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T13:46:13.588Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T13:46:13.588Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T13:46:13.588Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T13:46:41.579Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-11T13:46:43.421Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-03-11T13:46:43.459Z INFO Ui build finished successfully.
+2025-03-11T13:46:43.471Z DEBUG [BUILD_TIME] Built UI in 2028.928500000009ms.
+2025-03-11T13:46:43.471Z INFO Reloading browser
+2025-03-11T13:46:43.542Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T13:46:43.542Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T13:46:43.542Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T13:46:44.135Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T13:46:44.135Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T13:46:44.135Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T13:47:10.214Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-11T13:47:11.905Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-03-11T13:47:11.936Z INFO Ui build finished successfully.
+2025-03-11T13:47:11.947Z DEBUG [BUILD_TIME] Built UI in 1853.8595000000205ms.
+2025-03-11T13:47:11.947Z INFO Reloading browser
+2025-03-11T13:47:12.030Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T13:47:12.030Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T13:47:12.030Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T13:47:12.892Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T13:47:12.892Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T13:47:12.892Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T13:47:47.740Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-11T13:47:49.457Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-03-11T13:47:49.490Z INFO Ui build finished successfully.
+2025-03-11T13:47:49.500Z DEBUG [BUILD_TIME] Built UI in 1897.4759000000195ms.
+2025-03-11T13:47:49.500Z INFO Reloading browser
+2025-03-11T13:47:49.564Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T13:47:49.564Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T13:47:49.564Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T13:47:50.176Z ERROR Request failed: {"code":401,"message":"Jwt expired","details":{"traceId":"0faa9773f0a8364a7b0f5c9c86a01d6a"}}
+2025-03-11T13:48:52.287Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-11T13:48:53.969Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-03-11T13:48:54.002Z INFO Ui build finished successfully.
+2025-03-11T13:48:54.014Z DEBUG [BUILD_TIME] Built UI in 1879.22080000001ms.
+2025-03-11T13:48:54.015Z INFO Reloading browser
+2025-03-11T13:48:54.069Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T13:48:54.069Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T13:48:54.069Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T13:48:54.070Z DEBUG [AUTH] OAuth2 token expired with a value of: 3.93 seconds
+2025-03-11T13:48:55.277Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T13:48:55.277Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T13:48:55.277Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T13:53:14.335Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-11T13:53:16.057Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-03-11T13:53:16.092Z INFO Ui build finished successfully.
+2025-03-11T13:53:16.106Z DEBUG [BUILD_TIME] Built UI in 1936.6694000000134ms.
+2025-03-11T13:53:16.106Z INFO Reloading browser
+2025-03-11T13:53:16.396Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T13:53:16.396Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T13:53:16.396Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T13:53:16.837Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T13:53:16.837Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T13:53:16.837Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T13:53:31.359Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-11T13:53:33.337Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-03-11T13:53:33.369Z INFO Ui build finished successfully.
+2025-03-11T13:53:33.380Z DEBUG [BUILD_TIME] Built UI in 2264.037100000074ms.
+2025-03-11T13:53:33.380Z INFO Reloading browser
+2025-03-11T13:53:33.480Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T13:53:33.480Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T13:53:33.480Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T13:53:34.183Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T13:53:34.183Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T13:53:34.183Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T13:54:48.317Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-11T13:54:49.958Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-03-11T13:54:49.990Z INFO Ui build finished successfully.
+2025-03-11T13:54:50.002Z DEBUG [BUILD_TIME] Built UI in 1867.37360000005ms.
+2025-03-11T13:54:50.002Z INFO Reloading browser
+2025-03-11T13:54:50.056Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T13:54:50.056Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T13:54:50.056Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T13:54:50.057Z DEBUG [AUTH] OAuth2 token expired with a value of: 11.943 seconds
+2025-03-11T13:54:51.228Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T13:54:51.228Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T13:54:51.228Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T13:55:04.099Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-11T13:55:05.779Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-03-11T13:55:05.812Z INFO Ui build finished successfully.
+2025-03-11T13:55:05.823Z DEBUG [BUILD_TIME] Built UI in 1951.3253999999724ms.
+2025-03-11T13:55:05.823Z INFO Reloading browser
+2025-03-11T13:55:05.868Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T13:55:05.868Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T13:55:05.868Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T13:55:06.419Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T13:55:06.419Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T13:55:06.419Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T13:55:14.398Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-11T13:55:16.619Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-03-11T13:55:16.650Z INFO Ui build finished successfully.
+2025-03-11T13:55:16.664Z DEBUG [BUILD_TIME] Built UI in 2486.8462999999756ms.
+2025-03-11T13:55:16.664Z INFO Reloading browser
+2025-03-11T13:55:16.720Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T13:55:16.720Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T13:55:16.720Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T13:55:17.126Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T13:55:17.126Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T13:55:17.126Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T13:55:44.823Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-11T13:55:46.610Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-03-11T13:55:46.644Z INFO Ui build finished successfully.
+2025-03-11T13:55:46.656Z DEBUG [BUILD_TIME] Built UI in 1952.0348999999696ms.
+2025-03-11T13:55:46.656Z INFO Reloading browser
+2025-03-11T13:55:46.702Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T13:55:46.702Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T13:55:46.702Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T13:55:47.328Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T13:55:47.328Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T13:55:47.329Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T13:55:56.374Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-11T13:55:58.156Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-03-11T13:55:58.194Z INFO Ui build finished successfully.
+2025-03-11T13:55:58.204Z DEBUG [BUILD_TIME] Built UI in 1982.6199000000488ms.
+2025-03-11T13:55:58.205Z INFO Reloading browser
+2025-03-11T13:55:58.255Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T13:55:58.255Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T13:55:58.255Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T13:55:58.938Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T13:55:58.938Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T13:55:58.938Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T13:56:19.024Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-11T13:56:20.797Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-03-11T13:56:20.828Z INFO Ui build finished successfully.
+2025-03-11T13:56:20.840Z DEBUG [BUILD_TIME] Built UI in 2027.0404000000563ms.
+2025-03-11T13:56:20.840Z INFO Reloading browser
+2025-03-11T13:56:20.908Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T13:56:20.908Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T13:56:20.908Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T13:56:21.327Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T13:56:21.327Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T13:56:21.327Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T13:57:22.365Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-11T13:57:24.014Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-03-11T13:57:24.051Z INFO Ui build finished successfully.
+2025-03-11T13:57:24.062Z DEBUG [BUILD_TIME] Built UI in 1848.6256000000285ms.
+2025-03-11T13:57:24.062Z INFO Reloading browser
+2025-03-11T13:57:24.110Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T13:57:24.110Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T13:57:24.110Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T13:57:24.721Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T13:57:24.721Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T13:57:24.721Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T13:57:34.003Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-11T13:57:35.622Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-03-11T13:57:35.654Z INFO Ui build finished successfully.
+2025-03-11T13:57:35.665Z DEBUG [BUILD_TIME] Built UI in 1823.3939999999711ms.
+2025-03-11T13:57:35.665Z INFO Reloading browser
+2025-03-11T13:57:35.714Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T13:57:35.714Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T13:57:35.714Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T13:57:36.205Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T13:57:36.205Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T13:57:36.205Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T13:58:02.655Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-11T13:58:04.275Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-03-11T13:58:04.307Z INFO Ui build finished successfully.
+2025-03-11T13:58:04.322Z DEBUG [BUILD_TIME] Built UI in 1868.9895000000251ms.
+2025-03-11T13:58:04.323Z INFO Reloading browser
+2025-03-11T13:58:04.386Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T13:58:04.386Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T13:58:04.386Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T13:58:05.246Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T13:58:05.246Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T13:58:05.246Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T13:59:09.471Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-11T13:59:11.047Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-03-11T13:59:11.080Z INFO Ui build finished successfully.
+2025-03-11T13:59:11.091Z DEBUG [BUILD_TIME] Built UI in 1848.8951999999117ms.
+2025-03-11T13:59:11.091Z INFO Reloading browser
+2025-03-11T13:59:11.143Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T13:59:11.143Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T13:59:11.143Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T13:59:11.999Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T13:59:11.999Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T13:59:11.999Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T13:59:54.443Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-11T13:59:56.038Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-03-11T13:59:56.070Z INFO Ui build finished successfully.
+2025-03-11T13:59:56.081Z DEBUG [BUILD_TIME] Built UI in 1853.9446999999927ms.
+2025-03-11T13:59:56.081Z INFO Reloading browser
+2025-03-11T13:59:56.145Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T13:59:56.145Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T13:59:56.145Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T13:59:56.644Z ERROR Request failed: {"code":401,"message":"Jwt expired","details":{"traceId":"651a1282a05314652249d46851ad5e96"}}
+2025-03-11T14:00:38.335Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-11T14:00:40.033Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-03-11T14:00:40.068Z INFO Ui build finished successfully.
+2025-03-11T14:00:40.079Z DEBUG [BUILD_TIME] Built UI in 1896.8030999999028ms.
+2025-03-11T14:00:40.079Z INFO Reloading browser
+2025-03-11T14:00:40.141Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T14:00:40.141Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T14:00:40.141Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T14:00:40.142Z DEBUG [AUTH] OAuth2 token expired with a value of: 17.858 seconds
+2025-03-11T14:00:41.235Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T14:00:41.235Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T14:00:41.235Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T14:01:00.239Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-11T14:01:01.901Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-03-11T14:01:01.936Z INFO Ui build finished successfully.
+2025-03-11T14:01:01.949Z DEBUG [BUILD_TIME] Built UI in 1870.9205000000075ms.
+2025-03-11T14:01:01.950Z INFO Reloading browser
+2025-03-11T14:01:02.007Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T14:01:02.007Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T14:01:02.007Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T14:01:02.935Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T14:01:02.935Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T14:01:02.935Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T14:03:08.582Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-11T14:03:10.228Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-03-11T14:03:10.264Z INFO Ui build finished successfully.
+2025-03-11T14:03:10.276Z DEBUG [BUILD_TIME] Built UI in 1906.9815999998245ms.
+2025-03-11T14:03:10.276Z INFO Reloading browser
+2025-03-11T14:03:10.336Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T14:03:10.336Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T14:03:10.336Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T14:03:11.296Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T14:03:11.296Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T14:03:11.296Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T14:03:12.067Z INFO Ui build finished successfully.
+2025-03-11T14:03:12.080Z DEBUG [BUILD_TIME] Built UI in 792.4886000000406ms.
+2025-03-11T14:03:12.080Z INFO Reloading browser
+2025-03-11T14:03:12.139Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T14:03:12.139Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T14:03:12.139Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T14:03:12.335Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T14:03:12.335Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T14:03:12.335Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T14:03:15.343Z INFO Ui build finished successfully.
+2025-03-11T14:03:15.355Z DEBUG [BUILD_TIME] Built UI in 851.2040999999736ms.
+2025-03-11T14:03:15.355Z INFO Reloading browser
+2025-03-11T14:03:15.404Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T14:03:15.405Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T14:03:15.405Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T14:03:15.576Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T14:03:15.576Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T14:03:15.576Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T14:03:16.591Z INFO Ui build finished successfully.
+2025-03-11T14:03:16.605Z DEBUG [BUILD_TIME] Built UI in 737.7726999998558ms.
+2025-03-11T14:03:16.605Z INFO Reloading browser
+2025-03-11T14:03:16.654Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T14:03:16.654Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T14:03:16.654Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T14:03:16.827Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T14:03:16.827Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T14:03:16.827Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T14:06:54.029Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-11T14:06:55.708Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-03-11T14:06:55.739Z INFO Ui build finished successfully.
+2025-03-11T14:06:55.750Z DEBUG [BUILD_TIME] Built UI in 1849.3652000001166ms.
+2025-03-11T14:06:55.750Z INFO Reloading browser
+2025-03-11T14:06:55.823Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T14:06:55.823Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T14:06:55.823Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T14:06:55.824Z DEBUG [AUTH] OAuth2 token expired with a value of: -7.824 seconds
+2025-03-11T14:06:56.798Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T14:06:56.798Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T14:06:56.798Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T14:07:59.844Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-11T14:08:01.536Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-03-11T14:08:01.568Z INFO Ui build finished successfully.
+2025-03-11T14:08:01.579Z DEBUG [BUILD_TIME] Built UI in 1863.5191999999806ms.
+2025-03-11T14:08:01.579Z INFO Reloading browser
+2025-03-11T14:08:01.633Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T14:08:01.633Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T14:08:01.633Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T14:08:02.421Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T14:08:02.421Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T14:08:02.421Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T14:10:09.589Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-11T14:10:10.846Z INFO > D:/Dev/Settings Observability/settings-observability/src/app/components/DetailedView.tsx:163:21 - Error: TS2322 Type '{ format: string; threshold: number; violatingSamples: number; window: number; dealertingSamples: number; dealertingWindow: number; enabled: string; }' is not assignable to type 'IntrinsicAttributes & { format?: string | undefined; threshold?: number | undefined; violatingSamples?: number | undefined; window?: number | undefined; enabled?: string | undefined; }'.
+  Property 'dealertingSamples' does not exist on type 'IntrinsicAttributes & { format?: string | undefined; threshold?: number | undefined; violatingSamples?: number | undefined; window?: number | undefined; enabled?: string | undefined; }'.
+  161 |                     violatingSamples={3}
+  162 |                     window={5}
+> 163 |                     dealertingSamples={5}
+      |                     ^
+  164 |                     dealertingWindow={5}
+  165 |                     enabled={"enabled"}
+  166 |                     // dealertingSamples={5}
+2025-03-11T14:10:10.846Z DEBUG [TYPE_CHECKER] Watch status change: message TS6193: Found 1 error. Watching for file changes.
+
+2025-03-11T14:10:10.882Z INFO Ui build finished successfully.
+2025-03-11T14:10:10.896Z DEBUG [BUILD_TIME] Built UI in 1439.065900000045ms.
+2025-03-11T14:10:10.896Z INFO Reloading browser
+2025-03-11T14:10:10.949Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T14:10:10.949Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T14:10:10.949Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T14:10:11.552Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T14:10:11.552Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T14:10:11.552Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T14:10:25.797Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-11T14:10:27.398Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-03-11T14:10:27.429Z INFO Ui build finished successfully.
+2025-03-11T14:10:27.440Z DEBUG [BUILD_TIME] Built UI in 1782.5385000000242ms.
+2025-03-11T14:10:27.440Z INFO Reloading browser
+2025-03-11T14:10:27.494Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T14:10:27.494Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T14:10:27.494Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T14:10:28.373Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T14:10:28.373Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T14:10:28.373Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T14:11:09.282Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-11T14:11:10.555Z INFO > D:/Dev/Settings Observability/settings-observability/src/app/components/DetailedView.tsx:163:21 - Error: TS2322 Type '{ format: string; threshold: number; violatingSamples: number; window: number; dealertingSamples: number; dealertingWindow: number; enabled: string; }' is not assignable to type 'IntrinsicAttributes & { format: any; threshold: any; violatingSamples: any; window: any; enabled: any; }'.
+  Property 'dealertingSamples' does not exist on type 'IntrinsicAttributes & { format: any; threshold: any; violatingSamples: any; window: any; enabled: any; }'.
+  161 |                     violatingSamples={3}
+  162 |                     window={5}
+> 163 |                     dealertingSamples={5}
+      |                     ^
+  164 |                     dealertingWindow={5}
+  165 |                     enabled={"enabled"}
+  166 |                     // dealertingSamples={5}
+2025-03-11T14:11:10.555Z DEBUG [TYPE_CHECKER] Watch status change: message TS6193: Found 1 error. Watching for file changes.
+
+2025-03-11T14:11:10.588Z INFO Ui build finished successfully.
+2025-03-11T14:11:10.599Z DEBUG [BUILD_TIME] Built UI in 1514.3156999999192ms.
+2025-03-11T14:11:10.599Z INFO Reloading browser
+2025-03-11T14:11:10.653Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T14:11:10.653Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T14:11:10.653Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T14:11:11.345Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T14:11:11.345Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T14:11:11.345Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T14:12:14.605Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-11T14:12:16.240Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-03-11T14:12:16.277Z INFO Ui build finished successfully.
+2025-03-11T14:12:16.291Z DEBUG [BUILD_TIME] Built UI in 1898.2720999999437ms.
+2025-03-11T14:12:16.291Z INFO Reloading browser
+2025-03-11T14:12:16.341Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T14:12:16.341Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T14:12:16.341Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T14:12:16.342Z DEBUG [AUTH] OAuth2 token expired with a value of: 47.658 seconds
+2025-03-11T14:12:17.797Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T14:12:17.797Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T14:12:17.797Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T14:14:18.341Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-11T14:14:20.047Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-03-11T14:14:20.088Z INFO Ui build finished successfully.
+2025-03-11T14:14:20.099Z DEBUG [BUILD_TIME] Built UI in 1997.8945000001695ms.
+2025-03-11T14:14:20.099Z INFO Reloading browser
+2025-03-11T14:14:20.160Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T14:14:20.160Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T14:14:20.160Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T14:14:20.803Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T14:14:20.803Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T14:14:20.803Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T15:32:32.038Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-11T15:32:33.529Z INFO > D:/Dev/Settings Observability/settings-observability/src/app/components/DetailedView.tsx:2:25 - Error: TS2305 Module '"@dynatrace/strato-components/layouts"' has no exported member 'Page'.
+  1 | import React, { useMemo } from 'react';
+> 2 | import { Flex, Surface, Page, TitleBar } from '@dynatrace/strato-components/layouts';
+    |                         ^
+  3 | import { DataTableV2, type DataTableV2ColumnDef } from '@dynatrace/strato-components-preview/tables';
+  4 | import { Tab, Tabs } from '@dynatrace/strato-components-preview/navigation';
+  5 | import { CriticalIcon, DavisAiSignetIcon } from '@dynatrace/strato-icons';
+2025-03-11T15:32:33.531Z INFO > D:/Dev/Settings Observability/settings-observability/src/app/components/DetailedView.tsx:2:31 - Error: TS2305 Module '"@dynatrace/strato-components/layouts"' has no exported member 'TitleBar'.
+  1 | import React, { useMemo } from 'react';
+> 2 | import { Flex, Surface, Page, TitleBar } from '@dynatrace/strato-components/layouts';
+    |                               ^
+  3 | import { DataTableV2, type DataTableV2ColumnDef } from '@dynatrace/strato-components-preview/tables';
+  4 | import { Tab, Tabs } from '@dynatrace/strato-components-preview/navigation';
+  5 | import { CriticalIcon, DavisAiSignetIcon } from '@dynatrace/strato-icons';
+2025-03-11T15:32:33.531Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 2 errors. Watching for file changes.
+
+2025-03-11T15:32:33.532Z INFO Ui build finished successfully.
+2025-03-11T15:32:33.532Z ERROR Error: No matching export in "node_modules/@dynatrace/strato-components/esm/layouts/index.js" for import "Page" at location: src/app/components/DetailedView.tsx:2:24
+2025-03-11T15:32:33.532Z ERROR Error: No matching export in "node_modules/@dynatrace/strato-components/esm/layouts/index.js" for import "TitleBar" at location: src/app/components/DetailedView.tsx:2:30
+2025-03-11T15:32:33.538Z DEBUG [BUILD_TIME] Built UI in 1692.405199999921ms.
+2025-03-11T15:32:33.540Z INFO > D:\Dev\Settings Observability\settings-observability\src\app\components\DetailedView.tsx:2:25 - Error: No matching export in "node_modules/@dynatrace/strato-components/esm/layouts/index.js" for import "Page"
+  1 | import React, { useMemo } from 'react';
+> 2 | import { Flex, Surface, Page, TitleBar } from '@dynatrace/strato-components/layouts';
+    |                         ^
+  3 | import { DataTableV2, type DataTableV2ColumnDef } from '@dynatrace/strato-components-preview/tables';
+  4 | import { Tab, Tabs } from '@dynatrace/strato-components-preview/navigation';
+  5 | import { CriticalIcon, DavisAiSignetIcon } from '@dynatrace/strato-icons';
+2025-03-11T15:32:33.541Z INFO > D:\Dev\Settings Observability\settings-observability\src\app\components\DetailedView.tsx:2:31 - Error: No matching export in "node_modules/@dynatrace/strato-components/esm/layouts/index.js" for import "TitleBar"
+  1 | import React, { useMemo } from 'react';
+> 2 | import { Flex, Surface, Page, TitleBar } from '@dynatrace/strato-components/layouts';
+    |                               ^
+  3 | import { DataTableV2, type DataTableV2ColumnDef } from '@dynatrace/strato-components-preview/tables';
+  4 | import { Tab, Tabs } from '@dynatrace/strato-components-preview/navigation';
+  5 | import { CriticalIcon, DavisAiSignetIcon } from '@dynatrace/strato-icons';
+2025-03-11T15:33:03.792Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-11T15:33:06.086Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-03-11T15:33:06.122Z INFO Ui build finished successfully.
+2025-03-11T15:33:06.136Z DEBUG [BUILD_TIME] Built UI in 2552.712299999781ms.
+2025-03-11T15:33:06.654Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-11T15:33:08.242Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-03-11T15:33:13.155Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T15:33:13.155Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T15:33:13.155Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T15:33:13.155Z DEBUG [AUTH] OAuth2 token expired with a value of: -4488.155 seconds
+2025-03-11T15:33:13.779Z DEBUG [AUTH] Getting the token via the refresh_token process has failed with: Error: Bad Request. Proceeding with SSO flow instead.
+2025-03-11T15:33:13.779Z INFO  DT-APP:  Authenticate with Dynatrace SSO
+2025-03-11T15:33:14.122Z DEBUG [AUTH] SSO-link https://sso.dynatrace.com/oauth2/authorize?client_id=dt0s08.dt-app-local&redirect_uri=http%3A%2F%2Flocalhost%3A5343%2Fauth%2Flogin&state=771305f0250a976ef92d69cb29c230b96dca7bea&response_type=code&code_challenge_method=S256&code_challenge=4VmSFgwJnd6cZd3uDuTMleqkjCYL-DH8w7-KyWx4CqM&scope=app-engine%3Aapps%3Arun%20storage%3Alogs%3Aread%20storage%3Abuckets%3Aread
+2025-03-11T15:33:15.508Z DEBUG [AUTH] Received authorized code for oAuth
+2025-03-11T15:35:41.636Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-11T15:35:43.820Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-03-11T15:35:46.450Z INFO Ui build finished successfully.
+2025-03-11T15:35:46.462Z DEBUG [BUILD_TIME] Built UI in 751.5469000004232ms.
+2025-03-11T15:35:46.462Z INFO Reloading browser
+2025-03-11T15:35:46.516Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T15:35:46.516Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T15:35:46.516Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T15:35:47.288Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T15:35:47.288Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T15:35:47.288Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T15:35:59.457Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T15:35:59.457Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T15:35:59.457Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T15:36:33.037Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-11T15:36:34.718Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-03-11T15:36:34.758Z INFO Ui build finished successfully.
+2025-03-11T15:36:34.772Z DEBUG [BUILD_TIME] Built UI in 1866.4285999992862ms.
+2025-03-11T15:36:34.772Z INFO Reloading browser
+2025-03-11T15:36:34.828Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T15:36:34.828Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T15:36:34.828Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T15:36:35.517Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T15:36:35.517Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T15:36:35.517Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T15:38:07.072Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-11T15:38:08.760Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-03-11T15:38:08.793Z INFO Ui build finished successfully.
+2025-03-11T15:38:08.804Z DEBUG [BUILD_TIME] Built UI in 1874.9512000000104ms.
+2025-03-11T15:38:08.804Z INFO Reloading browser
+2025-03-11T15:38:08.861Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T15:38:08.861Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T15:38:08.861Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T15:38:09.720Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T15:38:09.720Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T15:38:09.720Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T15:38:34.450Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-11T15:38:36.089Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-03-11T15:54:33.103Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-11T15:54:34.988Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-03-11T15:54:35.505Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-11T15:54:37.396Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-03-11T15:54:53.360Z INFO Ui build finished successfully.
+2025-03-11T15:54:53.373Z DEBUG [BUILD_TIME] Built UI in 788.1391000002623ms.
+2025-03-11T15:54:53.373Z INFO Reloading browser
+2025-03-11T15:54:53.437Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T15:54:53.437Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T15:54:53.437Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T15:54:53.438Z DEBUG [AUTH] OAuth2 token expired with a value of: -929.438 seconds
+2025-03-11T15:54:54.654Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-11T15:54:56.223Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-03-11T15:54:56.278Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T15:54:56.278Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T15:54:56.278Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T15:54:57.484Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-11T15:54:59.085Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-03-11T16:03:16.703Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-11T16:03:19.528Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-03-11T16:03:20.432Z INFO Ui build finished successfully.
+2025-03-11T16:03:20.443Z DEBUG [BUILD_TIME] Built UI in 902.6149000003934ms.
+2025-03-11T16:03:20.443Z INFO Reloading browser
+2025-03-11T16:03:20.495Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T16:03:20.495Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T16:03:20.495Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T16:03:20.495Z DEBUG [AUTH] OAuth2 token expired with a value of: -138.495 seconds
+2025-03-11T16:03:22.918Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T16:03:22.918Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T16:03:22.918Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T16:03:23.216Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T16:03:23.216Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T16:03:23.216Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T16:03:23.367Z ERROR Request failed: {"code":403,"message":"OAuth token is missing required scope. Use one of: [settings:objects:read]"}
+2025-03-11T16:04:24.005Z INFO  DT-APP:  The app configuration has been changed, please restart the development server for the changes to take effect.
+2025-03-11T16:04:31.244Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T16:04:31.245Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T16:04:31.245Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T16:04:31.793Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T16:04:31.794Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D2cee6199-c358-43e6-97f9-5396535371c7&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T16:04:31.794Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T16:04:31.888Z ERROR Request failed: {"code":403,"message":"OAuth token is missing required scope. Use one of: [settings:objects:read]"}
+2025-03-11T16:06:41.252Z INFO  DT-APP:  The app configuration has been changed, please restart the development server for the changes to take effect.
+2025-03-11T16:06:45.648Z ERROR Error: Terminal interrupt signal
+2025-03-11T16:06:45.648Z DEBUG [TELEMETRY] Not reporting this specific error
+2025-03-11T16:06:45.648Z DEBUG [TELEMETRY] Closing OpenKit connection
+2025-03-11T16:06:46.006Z DEBUG [TELEMETRY] Successfully closed OpenKit connection
+2025-03-11T16:06:54.001Z DEBUG [TELEMETRY] Creating a new HTTP and HTTPS interceptor for tracing
+2025-03-11T16:06:54.001Z DEBUG [TELEMETRY] Successfully initialized OpenKit
+2025-03-11T16:06:54.001Z DEBUG [TELEMETRY] Telemetry enabled: Session ID "969232115017232800"
+2025-03-11T16:06:54.002Z DEBUG [TELEMETRY] Identification successful
+2025-03-11T16:06:54.283Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T16:06:54.283Z DEBUG [HTTP(S)] Execute GET request without allowing redirection to 'https://guu84124.apps.dynatrace.com/platform/oauth2/authorization/dynatrace-sso'
+2025-03-11T16:06:55.419Z DEBUG [HTTP(S)] Resolved URL is https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D178a5add-a097-4158-8810-8e38380390ad&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T16:06:55.419Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T16:06:55.420Z INFO  DT-APP:  Authenticate with Dynatrace SSO
+2025-03-11T16:06:55.599Z DEBUG [AUTH] SSO-link https://sso.dynatrace.com/oauth2/authorize?client_id=dt0s08.dt-app-local&redirect_uri=http%3A%2F%2Flocalhost%3A5343%2Fauth%2Flogin&state=934d17617d1b04f96ff2bc43158f137e74f2db21&response_type=code&code_challenge_method=S256&code_challenge=B-dtPpotMNiHPCEzUdw9frzvLKdc4TJDaazH0pV0It8&scope=app-engine%3Aapps%3Arun%20storage%3Alogs%3Aread%20settings%3Aobjects%3Aread
+2025-03-11T16:06:56.714Z DEBUG [AUTH] Received authorized code for oAuth
+2025-03-11T16:06:56.931Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T16:06:56.931Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D178a5add-a097-4158-8810-8e38380390ad&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T16:06:56.931Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T16:06:57.284Z INFO  DT-APP:  Started local development server
+2025-03-11T16:06:57.284Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T16:06:57.284Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D178a5add-a097-4158-8810-8e38380390ad&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T16:06:57.296Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T16:06:57.296Z DEBUG [AUTH] OAuth2 token expired with a value of: -8264.296 seconds
+2025-03-11T16:06:57.479Z DEBUG [TYPE_CHECKER] Watch status change: message TS6031: Starting compilation in watch mode...
+
+2025-03-11T16:07:05.587Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-03-11T16:07:05.604Z DEBUG [AUTH] Getting the token via the refresh_token process has failed with: Error: Bad Request. Proceeding with SSO flow instead.
+2025-03-11T16:07:05.604Z INFO  DT-APP:  Authenticate with Dynatrace SSO
+2025-03-11T16:07:06.319Z DEBUG [AUTH] SSO-link https://sso.dynatrace.com/oauth2/authorize?client_id=dt0s08.dt-app-local&redirect_uri=http%3A%2F%2Flocalhost%3A5343%2Fauth%2Flogin&state=934d17617d1b04f96ff2bc43158f137e74f2db21&response_type=code&code_challenge_method=S256&code_challenge=B-dtPpotMNiHPCEzUdw9frzvLKdc4TJDaazH0pV0It8
+2025-03-11T16:07:08.224Z DEBUG [AUTH] Received authorized code for oAuth
+2025-03-11T16:07:09.044Z WARNING 
+Warning ──────────────────────────────────────────────────────────────────────────────────
+
+  Missing scope permissions: settings:objects:read
+
+──────────────────────────────────────────────────────────────────────────────────────────
+
+2025-03-11T16:07:16.562Z INFO Initial ui build finished successfully.
+2025-03-11T16:07:16.630Z DEBUG [BUILD_TIME] Built UI in 10933.885400000001ms.
+2025-03-11T16:07:16.653Z INFO 
+────────────────────────────────────────────────────────────────────────────────
+
+  App Shell URL: https://guu84124.apps.dynatrace.com/ui/apps/local-dev-server/?locationAppIds=http%3A%2F%2Flocalhost%3A3000%2Fui%2Clocal-dev-server
+  Local URL: http://localhost:3000/ui
+  
+  Ready for development! 💻
+
+────────────────────────────────────────────────────────────────────────────────
+
+2025-03-11T16:07:18.928Z INFO  DT-APP:  
+    ╭──────────────────────────────────────────────────────────────╮
+    │                                                              │
+    │   Updates for @dynatrace packages available:                 │
+    │   @dynatrace/strato-components 0.85.100 → 0.85.120           │
+    │   @dynatrace/strato-components-preview 0.117.53 → 0.117.73   │
+    │   dt-app 0.136.3 → 0.137.1                                   │
+    │   To update, run npx dt-app update                           │
+    │                                                              │
+    ╰──────────────────────────────────────────────────────────────╯
+ 
+2025-03-11T16:07:19.084Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T16:07:19.084Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D178a5add-a097-4158-8810-8e38380390ad&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T16:07:19.084Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T16:07:28.597Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T16:07:28.597Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D178a5add-a097-4158-8810-8e38380390ad&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T16:07:28.597Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T16:13:23.206Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-11T16:13:24.996Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-03-11T16:13:26.204Z INFO Ui build finished successfully.
+2025-03-11T16:13:26.221Z DEBUG [BUILD_TIME] Built UI in 834.8649000000441ms.
+2025-03-11T16:13:26.221Z INFO Reloading browser
+2025-03-11T16:13:26.323Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T16:13:26.323Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D178a5add-a097-4158-8810-8e38380390ad&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T16:13:26.323Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T16:13:26.324Z DEBUG [AUTH] OAuth2 token expired with a value of: -21.324 seconds
+2025-03-11T16:13:27.524Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T16:13:27.524Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D178a5add-a097-4158-8810-8e38380390ad&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T16:13:27.524Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T16:13:27.898Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T16:13:27.898Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D178a5add-a097-4158-8810-8e38380390ad&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T16:13:27.898Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T16:13:48.855Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T16:13:48.855Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D178a5add-a097-4158-8810-8e38380390ad&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T16:13:48.855Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T16:13:49.543Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T16:13:49.543Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D178a5add-a097-4158-8810-8e38380390ad&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T16:13:49.544Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T16:14:12.267Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-11T16:14:13.918Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-03-11T16:14:14.684Z INFO Ui build finished successfully.
+2025-03-11T16:14:14.697Z DEBUG [BUILD_TIME] Built UI in 764.8954999999842ms.
+2025-03-11T16:14:14.697Z INFO Reloading browser
+2025-03-11T16:14:14.760Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T16:14:14.760Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D178a5add-a097-4158-8810-8e38380390ad&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T16:14:14.760Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T16:14:15.277Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T16:14:15.277Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D178a5add-a097-4158-8810-8e38380390ad&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T16:14:15.277Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T16:14:15.622Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T16:14:15.622Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D178a5add-a097-4158-8810-8e38380390ad&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T16:14:15.622Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T16:14:21.830Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T16:14:21.830Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D178a5add-a097-4158-8810-8e38380390ad&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T16:14:21.830Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T16:14:22.355Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T16:14:22.355Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D178a5add-a097-4158-8810-8e38380390ad&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T16:14:22.355Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T16:15:33.058Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-11T16:15:34.786Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-03-11T16:15:34.820Z INFO Ui build finished successfully.
+2025-03-11T16:15:34.833Z DEBUG [BUILD_TIME] Built UI in 1963.853999999992ms.
+2025-03-11T16:15:34.833Z INFO Reloading browser
+2025-03-11T16:15:34.918Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T16:15:34.918Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D178a5add-a097-4158-8810-8e38380390ad&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T16:15:34.918Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T16:15:35.631Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T16:15:35.631Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D178a5add-a097-4158-8810-8e38380390ad&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T16:15:35.631Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T16:15:35.930Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T16:15:35.930Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D178a5add-a097-4158-8810-8e38380390ad&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T16:15:35.930Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T16:18:09.060Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-11T16:18:10.846Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-03-11T16:18:10.886Z INFO Ui build finished successfully.
+2025-03-11T16:18:10.907Z DEBUG [BUILD_TIME] Built UI in 1981.36109999998ms.
+2025-03-11T16:18:10.908Z INFO Reloading browser
+2025-03-11T16:18:11.022Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T16:18:11.022Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D178a5add-a097-4158-8810-8e38380390ad&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T16:18:11.022Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T16:18:12.177Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T16:18:12.177Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D178a5add-a097-4158-8810-8e38380390ad&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T16:18:12.177Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T16:18:12.453Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T16:18:12.453Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D178a5add-a097-4158-8810-8e38380390ad&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T16:18:12.453Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T16:18:12.572Z ERROR Request failed: {"code":400,"message":"Parameter 'scope' is required"}
+2025-03-11T16:20:47.660Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
+
+2025-03-11T16:20:49.485Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-03-11T16:20:49.526Z INFO Ui build finished successfully.
+2025-03-11T16:20:49.543Z DEBUG [BUILD_TIME] Built UI in 2028.076699999976ms.
+2025-03-11T16:20:49.543Z INFO Reloading browser
+2025-03-11T16:20:49.842Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T16:20:49.842Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D178a5add-a097-4158-8810-8e38380390ad&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T16:20:49.842Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T16:20:49.843Z DEBUG [AUTH] OAuth2 token expired with a value of: -74.843 seconds
+2025-03-11T16:20:51.138Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T16:20:51.138Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D178a5add-a097-4158-8810-8e38380390ad&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T16:20:51.138Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-11T16:20:51.541Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-11T16:20:51.541Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3D178a5add-a097-4158-8810-8e38380390ad&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-11T16:20:51.541Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'

@@ -4,9 +4,6 @@ import {
   Page,
   TitleBar,
 } from '@dynatrace/strato-components-preview/layouts';
-import Borders from '@dynatrace/strato-design-tokens/borders';
-import Colors from '@dynatrace/strato-design-tokens/colors';
-import Spacings from '@dynatrace/strato-design-tokens/spacings';
 import { SideBar } from '../components/Sidebar';
 import { MainContent } from '../components/MainContent';
 import { DetailedView } from '../components/DetailedView';

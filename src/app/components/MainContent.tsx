@@ -1,97 +1,75 @@
-import React, { useMemo } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
+import { Detection, HostAnomalyDetectionResponse } from 'src/types/anomalyDetectionTypes';
 import { useCurrentTheme } from "@dynatrace/strato-components/core";
 import {
   AppHeader,
   Page,
   TitleBar,
 } from '@dynatrace/strato-components-preview/layouts';
-import Borders from '@dynatrace/strato-design-tokens/borders';
-import Colors from '@dynatrace/strato-design-tokens/colors';
-import Spacings from '@dynatrace/strato-design-tokens/spacings';
+import { fetchHostAnomalyDetectionData } from '../fetchData/fetchHostAnomalyDetectionData'; // Import the API function
 import { Card } from './Card';
 import { DataTable } from './DataTable';
 import { LevelToggle } from './LevelToggle';
-import { randBetweenDate, randDomainName, randFloat, randNumber } from '@ngneat/falso';
 import {
   DataTableV2,
   type DataTableV2ColumnDef,
 } from '@dynatrace/strato-components-preview/tables';
 
+export const MainContent = ({ title, subtitle, toggleGroups, isDetailViewVisible, setIsDetailViewVisible }) => {
+  const [cpuConfig, setCpuConfig] = useState<any>();  // Store fetched data
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-const Content = () => (
-  <Card
-      href="/anomalydetection"
-      inAppLink
-      imgSrc={
-        "./assets/anomaly_logo_dark.svg"
+  // Fetch data on mount
+  useEffect(() => {
+    const fetchData = async () => {
+      try { 
+        const response = await fetchHostAnomalyDetectionData();
+        const cpuSaturationResponse = response?.items?.[0]?.value?.host?.highCpuSaturationDetection;      
+        const cpuSaturationInfo = {
+          settingId: "CPU Saturation",
+          enabled: cpuSaturationResponse?.enabled,
+          threshold: cpuSaturationResponse?.detectionMode,
+        };
+        setCpuConfig(cpuSaturationInfo); // Store the relevant data in state
+        setLoading(false);
+      } catch (error) {
+        console.error("Error fetching data:", error);
       }
-      name="Anomaly Detection Settings"
-  />
-);
-
-
-export const MainContent = ({title, subtitle, toggleGroups,isDetailViewVisible, setIsDetailViewVisible }) => {
-  //Handle state with Hooks
-  //Define the columns that make up the table. The useMemo hook ensures they are only rendered once 
-  const columns = useMemo<DataTableV2ColumnDef<(typeof data)[number]>[]>(() => {
-    return [
-      {
-        id: 'Setting',
-        header: 'Setting',
-        accessor: 'setting',
-      },
-      {
-        id: 'Threshold',
-        header: 'Threshold',
-        accessor: 'threshold',
-      },
-      {
-        id: 'Sliding window',
-        header: 'Sliding window',
-        accessor: 'sliding window',
-      },
-      {
-        id: 'Overrides',
-        header: 'Overrides',
-        accessor: 'overrides',
-      },
-    ];
+    };
+    fetchData();
   }, []);
-  //Define the data that is to be displayed in the table. The keys must match the column accessors defined above.
-  const data = useMemo(
-    () =>
-      new Array(300).fill(0).map(() => ({
-        setting: `et-demo-${randDomainName()}`,
-        threshold: randFloat({ min: 100, max: 300, precision: 2 }),
-        'sliding window': randNumber({ min: 3520000000, max: 6150000000 }),
-        overrides: randBetweenDate({
-          from: '2022-09-26T12:45:07Z',
-          to: '2022-09-28T10:22:56Z',
-        }),
-      })),
-    []
-  );
-  const theme = useCurrentTheme();
-  
-  return (
-      <Page.Main style={{ display: 'flex', flexDirection: 'column'}}>
-        <TitleBar style={{ marginBottom: '20px' }}>
-          <TitleBar.Prefix>
-            <Page.PanelControlButton target="sidebar" />
-          </TitleBar.Prefix>
-          <TitleBar.Title>{title}</TitleBar.Title>
-          <TitleBar.Subtitle>
-            {subtitle}
-          </TitleBar.Subtitle>
-          <TitleBar.Action>
-            <Page.PanelControlButton
-              onClick={() => setIsDetailViewVisible(!isDetailViewVisible)}
-            />
-          </TitleBar.Action>
-        </TitleBar>
-        <LevelToggle toggleGroups={toggleGroups}/>
-        <DataTable columns={columns} data={data} />
-      </Page.Main>
 
+  // Define table columns
+  const columns = useMemo<DataTableV2ColumnDef<(typeof cpuConfig)>[]>(() => [
+    { id: 'setting', header: 'Setting', accessor: 'settingId' }, // Adjust based on actual API data keys
+    { id: 'threshold', header: 'Threshold', accessor: 'threshold' },
+    { id: 'enabled', header: 'Enabled', accessor: 'enabled' },
+  ], []);
+
+  const theme = useCurrentTheme();
+
+  return (
+    <Page.Main style={{ display: 'flex', flexDirection: 'column' }}>
+      <TitleBar style={{ marginBottom: '20px' }}>
+        <TitleBar.Prefix>
+          <Page.PanelControlButton target="sidebar" />
+        </TitleBar.Prefix>
+        <TitleBar.Title>{title}</TitleBar.Title>
+        <TitleBar.Subtitle>{subtitle}</TitleBar.Subtitle>
+        <TitleBar.Action>
+          <Page.PanelControlButton onClick={() => setIsDetailViewVisible(!isDetailViewVisible)} />
+        </TitleBar.Action>
+      </TitleBar>
+      <LevelToggle toggleGroups={toggleGroups} />
+
+      {loading ? (
+        <div>Loading...</div>
+      ) : error ? (
+        <div style={{ color: 'red' }}>Error: {error}</div>
+      ) : (
+        <DataTable columns={columns} data={[cpuConfig]} />
+      )} 
+    </Page.Main>
   );
 };
