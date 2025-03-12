@@ -16,35 +16,54 @@ import {
 } from '@dynatrace/strato-components-preview/tables';
 
 export const MainContent = ({ title, subtitle, toggleGroups, isDetailViewVisible, setIsDetailViewVisible }) => {
-  const [cpuConfig, setCpuConfig] = useState<any>();  // Store fetched data
+  const [detections, setDetections] = useState<any[]>([]);  // Store multiple detection configurations
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   // Fetch data on mount
   useEffect(() => {
     const fetchData = async () => {
-      try { 
+      try {
         const response = await fetchHostAnomalyDetectionData();
-        const cpuSaturationResponse = response?.items?.[0]?.value?.host?.highCpuSaturationDetection;      
-        const cpuSaturationInfo = {
-          settingId: "CPU Saturation",
-          enabled: cpuSaturationResponse?.enabled,
-          threshold: cpuSaturationResponse?.detectionMode,
-        };
-        setCpuConfig(cpuSaturationInfo); // Store the relevant data in state
+        const detectionsData = [
+          { 
+            settingId: "CPU Saturation",
+            enabled: response?.items?.[0]?.value?.host?.highCpuSaturationDetection?.enabled,
+            detectionMode: response?.items?.[0]?.value?.host?.highCpuSaturationDetection?.detectionMode,
+          },
+          {
+            settingId: "GC Activity",
+            enabled: response?.items?.[0]?.value?.host?.highGcActivityDetection?.enabled,
+            detectionMode: response?.items?.[0]?.value?.host?.highGcActivityDetection?.detectionMode,
+          },
+          {
+            settingId: "Memory Detection",
+            enabled: response?.items?.[0]?.value?.host?.highMemoryDetection?.enabled,
+            detectionMode: response?.items?.[0]?.value?.host?.highMemoryDetection?.detectionMode,
+          },
+          {
+            settingId: "System Load",
+            enabled: response?.items?.[0]?.value?.host?.highSystemLoadDetection?.enabled,
+            detectionMode: response?.items?.[0]?.value?.host?.highSystemLoadDetection?.detectionMode,
+          }
+        ];
+        
+        setDetections(detectionsData);  // Store all detections in state
         setLoading(false);
       } catch (error) {
         console.error("Error fetching data:", error);
+        setError(error);
       }
     };
+
     fetchData();
   }, []);
 
   // Define table columns
-  const columns = useMemo<DataTableV2ColumnDef<(typeof cpuConfig)>[]>(() => [
-    { id: 'setting', header: 'Setting', accessor: 'settingId' }, // Adjust based on actual API data keys
-    { id: 'threshold', header: 'Threshold', accessor: 'threshold' },
-    { id: 'enabled', header: 'Enabled', accessor: 'enabled' },
+  const columns = useMemo<DataTableV2ColumnDef<(typeof detections)[number]>[]>(() => [
+    { id: 'setting', header: 'Setting', accessor: 'settingId' },
+    { id: 'detectionMode', header: 'Detection Mode', accessor: 'detectionMode' },
+    { id: 'enabled', header: 'Enabled', accessor: 'enabled' }
   ], []);
 
   const theme = useCurrentTheme();
@@ -68,8 +87,8 @@ export const MainContent = ({ title, subtitle, toggleGroups, isDetailViewVisible
       ) : error ? (
         <div style={{ color: 'red' }}>Error: {error}</div>
       ) : (
-        <DataTable columns={columns} data={[cpuConfig]} />
-      )} 
+        <DataTable columns={columns} data={detections} /> 
+      )}
     </Page.Main>
   );
 };
