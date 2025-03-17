@@ -1,5 +1,5 @@
 import { settingsObjectsClient } from '@dynatrace-sdk/client-classic-environment-v2';
-import { HostAnomalyDetectionResponse } from 'src/types/anomalyDetectionTypes';
+import { AnomalyDetectionResponse } from 'src/types/anomalyDetectionTypes';
 
 export async function fetchHostAnomalyDetectionData() {
   try {
@@ -7,7 +7,7 @@ export async function fetchHostAnomalyDetectionData() {
       schemaIds: 'builtin:anomaly-detection.infrastructure-hosts',
       scope: 'ENVIRONMENT'
     });
-    return data as HostAnomalyDetectionResponse;  // Ensure the data is returned
+    return data as AnomalyDetectionResponse;  // Ensure the data is returned
   } catch (error) {
     console.error("Error fetching host anomaly detection data:", error);
     return null; // Handle failure

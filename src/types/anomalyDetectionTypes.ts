@@ -1,52 +1,66 @@
-export interface Detection {
+export interface EventThresholds {
+    violatingSamples: number;
+    violatingEvaluationWindow: number;
+    dealertingSamples: number;
+    dealertingEvaluationWindow: number;
+  }
+  
+  export interface CustomThresholdsCPU {
+    cpuSaturation: number;
+    eventThresholds: EventThresholds;
+  }
+  
+  export interface CustomThresholdsMemory {
+    usedMemoryPercentageWindows: number;
+    usedMemoryPercentageNonWindows: number;
+    pageFaultsPerSecondWindows: number;
+    pageFaultsPerSecondNonWindows: number;
+    eventThresholds: EventThresholds;
+  }
+  
+  export interface CustomThresholdsGeneral {
+    outOfMemoryExceptionsNumber?: number;
+    outOfThreadsExceptionsNumber?: number;
+    eventThresholds: EventThresholds;
+  }
+  
+  export interface DetectionSetting<T = undefined> {
     enabled: boolean;
-    detectionMode: string;
-    customThresholds?: {
-      gcTimePercentage?: number;
-      gcSuspensionPercentage?: number;
-      eventThresholds?: {
-        violatingSamples: number;
-        violatingEvaluationWindow: number;
-        dealertingSamples: number;
-        dealertingEvaluationWindow: number;
-      };
-      outOfMemoryExceptionsNumber?: number;
-      outOfThreadsExceptionsNumber?: number;
-      newConnectionFailuresPercentage?: number;
-      failedConnectionsNumberPerMinute?: number;
+    detectionMode?: 'auto' | 'custom';
+    customThresholds?: T;
+  }
+  
+  export interface HostAnomalyDetection {
+    connectionLostDetection: {
+      enabled: boolean;
+      onGracefulShutdowns: 'ALERT_ON_GRACEFUL_SHUTDOWN' | 'DONT_ALERT_ON_GRACEFUL_SHUTDOWN';
+    };
+    highCpuSaturationDetection: DetectionSetting<CustomThresholdsCPU>;
+    highSystemLoadDetection: DetectionSetting;
+    highMemoryDetection: DetectionSetting<CustomThresholdsMemory>;
+    highGcActivityDetection: DetectionSetting;
+    outOfMemoryDetection: DetectionSetting<CustomThresholdsGeneral>;
+    outOfThreadsDetection: DetectionSetting<CustomThresholdsGeneral>;
+  }
+  
+  export interface NetworkAnomalyDetection {
+    networkDroppedPacketsDetection: DetectionSetting;
+    networkErrorsDetection: DetectionSetting;
+    highNetworkDetection: DetectionSetting;
+    networkTcpProblemsDetection: DetectionSetting;
+    networkHighRetransmissionDetection: DetectionSetting;
+  }
+  
+  export interface AnomalyDetectionResponseItem {
+    origin: string;
+    value: {
+      host: HostAnomalyDetection;
+      network: NetworkAnomalyDetection;
     };
   }
   
-  export interface Host {
-    connectionLostDetection: Detection;
-    highCpuSaturationDetection: Detection;
-    highSystemLoadDetection: Detection;
-    highMemoryDetection: Detection;
-    highGcActivityDetection: Detection;
-    outOfMemoryDetection: Detection;
-    outOfThreadsDetection: Detection;
-  }
-  
-  export interface Network {
-    networkDroppedPacketsDetection: Detection;
-    networkErrorsDetection: Detection;
-    highNetworkDetection: Detection;
-    networkTcpProblemsDetection: Detection;
-    networkHighRetransmissionDetection: Detection;
-  }
-  
-  export interface Value {
-    host: Host;
-    network: Network;
-  }
-  
-  export interface Item {
-    origin: string;
-    value: Value;
-  }
-  
-  export interface HostAnomalyDetectionResponse {
-    items: Item[];
+  export interface AnomalyDetectionResponse {
+    items: AnomalyDetectionResponseItem[];
     totalCount: number;
     pageSize: number;
   }

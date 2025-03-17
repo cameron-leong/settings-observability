@@ -1,5 +1,4 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { Detection, HostAnomalyDetectionResponse } from 'src/types/anomalyDetectionTypes';
 import { useCurrentTheme } from "@dynatrace/strato-components/core";
 import {
   AppHeader,
@@ -14,6 +13,12 @@ import {
   DataTableV2,
   type DataTableV2ColumnDef,
 } from '@dynatrace/strato-components-preview/tables';
+import styled from "styled-components";
+import { Colors } from '@dynatrace/strato-design-tokens';
+
+const GreyTableEntry = styled("span")`
+  color: ${Colors.Text.Neutral.Subdued};
+`;
 
 export const MainContent = ({ title, subtitle, toggleGroups, isDetailViewVisible, setIsDetailViewVisible }) => {
   const [detections, setDetections] = useState<any[]>([]);  // Store multiple detection configurations
@@ -28,22 +33,23 @@ export const MainContent = ({ title, subtitle, toggleGroups, isDetailViewVisible
         const detectionsData = [
           { 
             settingId: "CPU Saturation",
-            enabled: response?.items?.[0]?.value?.host?.highCpuSaturationDetection?.enabled,
+            enabled: (response?.items?.[0]?.value?.host?.highCpuSaturationDetection?.enabled)? "enabled":"disabled",
             detectionMode: response?.items?.[0]?.value?.host?.highCpuSaturationDetection?.detectionMode,
+            threshold: response?.items?.[0]?.value?.host?.highCpuSaturationDetection?.detectionMode == "auto"? "90%": response?.items?.[0]?.value?.host?.highCpuSaturationDetection?.customThresholds?.cpuSaturation
           },
           {
             settingId: "GC Activity",
-            enabled: response?.items?.[0]?.value?.host?.highGcActivityDetection?.enabled,
+            enabled: (response?.items?.[0]?.value?.host?.highGcActivityDetection?.enabled)? "enabled":"disabled",
             detectionMode: response?.items?.[0]?.value?.host?.highGcActivityDetection?.detectionMode,
           },
           {
             settingId: "Memory Detection",
-            enabled: response?.items?.[0]?.value?.host?.highMemoryDetection?.enabled,
+            enabled: (response?.items?.[0]?.value?.host?.highMemoryDetection?.enabled)? "enabled":"disabled",
             detectionMode: response?.items?.[0]?.value?.host?.highMemoryDetection?.detectionMode,
           },
           {
             settingId: "System Load",
-            enabled: response?.items?.[0]?.value?.host?.highSystemLoadDetection?.enabled,
+            enabled: (response?.items?.[0]?.value?.host?.highSystemLoadDetection?.enabled)? "enabled":"disabled",
             detectionMode: response?.items?.[0]?.value?.host?.highSystemLoadDetection?.detectionMode,
           }
         ];
@@ -63,8 +69,21 @@ export const MainContent = ({ title, subtitle, toggleGroups, isDetailViewVisible
   const columns = useMemo<DataTableV2ColumnDef<(typeof detections)[number]>[]>(() => [
     { id: 'setting', header: 'Setting', accessor: 'settingId' },
     { id: 'detectionMode', header: 'Detection Mode', accessor: 'detectionMode' },
-    { id: 'enabled', header: 'Enabled', accessor: 'enabled' }
-  ], []);
+    { id: 'enabled', header: 'Enabled', accessor: 'enabled' },
+    { id: 'threshold', header: 'Threshold', accessor: 'threshold' }
+  ].map(column => ({
+    ...column,
+    cell: ({ value, rowData }) => (
+      <DataTableV2.DefaultCell>
+        {rowData.enabled=="enabled" ? (
+          value
+        ) : (
+          <GreyTableEntry>{String(value)}</GreyTableEntry>
+        )}
+      </DataTableV2.DefaultCell>
+    )
+  })), []);
+  
 
   const theme = useCurrentTheme();
 
