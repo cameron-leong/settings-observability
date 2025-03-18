@@ -1,0 +1,3 @@
+2025-03-18T15:02:21.584Z DEBUG [PLUGIN] Searching for configuration file
+2025-03-18T15:02:21.585Z DEBUG [PLUGIN] Found c:\Users\cameron.leong\OneDrive - Dynatrace\SettingsApp\settings-observability\app.config.json
+2025-03-18T15:02:21.782Z DEBUG [PLUGIN] Searching for configuration file

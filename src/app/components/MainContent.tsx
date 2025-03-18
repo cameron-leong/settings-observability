@@ -1,5 +1,4 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { Detection, HostAnomalyDetectionResponse } from 'src/types/anomalyDetectionTypes';
 import { useCurrentTheme } from "@dynatrace/strato-components/core";
 import {
   AppHeader,
@@ -17,43 +16,35 @@ import {
 
 export const MainContent = ({ title, subtitle, toggleGroups, isDetailViewVisible, setIsDetailViewVisible }) => {
   const [detections, setDetections] = useState<any[]>([]);  // Store multiple detection configurations
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
 
   // Fetch data on mount
   useEffect(() => {
     const fetchData = async () => {
-      try {
-        const response = await fetchHostAnomalyDetectionData();
-        const detectionsData = [
-          { 
-            settingId: "CPU Saturation",
-            enabled: response?.items?.[0]?.value?.host?.highCpuSaturationDetection?.enabled,
-            detectionMode: response?.items?.[0]?.value?.host?.highCpuSaturationDetection?.detectionMode,
-          },
-          {
-            settingId: "GC Activity",
-            enabled: response?.items?.[0]?.value?.host?.highGcActivityDetection?.enabled,
-            detectionMode: response?.items?.[0]?.value?.host?.highGcActivityDetection?.detectionMode,
-          },
-          {
-            settingId: "Memory Detection",
-            enabled: response?.items?.[0]?.value?.host?.highMemoryDetection?.enabled,
-            detectionMode: response?.items?.[0]?.value?.host?.highMemoryDetection?.detectionMode,
-          },
-          {
-            settingId: "System Load",
-            enabled: response?.items?.[0]?.value?.host?.highSystemLoadDetection?.enabled,
-            detectionMode: response?.items?.[0]?.value?.host?.highSystemLoadDetection?.detectionMode,
-          }
-        ];
-        
-        setDetections(detectionsData);  // Store all detections in state
-        setLoading(false);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-        setError(error);
-      }
+      const response = await fetchHostAnomalyDetectionData();
+      const detectionsData = [
+        { 
+          settingId: "CPU Saturation",
+          enabled: response?.items?.[0]?.value?.host?.highCpuSaturationDetection?.enabled,
+          detectionMode: response?.items?.[0]?.value?.host?.highCpuSaturationDetection?.detectionMode,
+        },
+        {
+          settingId: "GC Activity",
+          enabled: response?.items?.[0]?.value?.host?.highGcActivityDetection?.enabled,
+          detectionMode: response?.items?.[0]?.value?.host?.highGcActivityDetection?.detectionMode,
+        },
+        {
+          settingId: "Memory Detection",
+          enabled: response?.items?.[0]?.value?.host?.highMemoryDetection?.enabled,
+          detectionMode: response?.items?.[0]?.value?.host?.highMemoryDetection?.detectionMode,
+        },
+        {
+          settingId: "System Load",
+          enabled: response?.items?.[0]?.value?.host?.highSystemLoadDetection?.enabled,
+          detectionMode: response?.items?.[0]?.value?.host?.highSystemLoadDetection?.detectionMode,
+        }
+      ];
+      
+      setDetections(detectionsData);  // Store all detections in state
     };
 
     fetchData();
@@ -81,14 +72,7 @@ export const MainContent = ({ title, subtitle, toggleGroups, isDetailViewVisible
         </TitleBar.Action>
       </TitleBar>
       <LevelToggle toggleGroups={toggleGroups} />
-
-      {loading ? (
-        <div>Loading...</div>
-      ) : error ? (
-        <div style={{ color: 'red' }}>Error: {error}</div>
-      ) : (
         <DataTable columns={columns} data={detections} /> 
-      )}
     </Page.Main>
   );
 };
