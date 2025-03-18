@@ -26,33 +26,7 @@ export const MainContent = ({ title, subtitle, toggleGroups, isDetailViewVisible
   // Fetch data on mount
   useEffect(() => {
     const fetchData = async () => {
-<<<<<<< HEAD
       const response = await fetchHostAnomalyDetectionData();
-      const detectionsData = [
-        { 
-          settingId: "CPU Saturation",
-          enabled: response?.items?.[0]?.value?.host?.highCpuSaturationDetection?.enabled,
-          detectionMode: response?.items?.[0]?.value?.host?.highCpuSaturationDetection?.detectionMode,
-        },
-        {
-          settingId: "GC Activity",
-          enabled: response?.items?.[0]?.value?.host?.highGcActivityDetection?.enabled,
-          detectionMode: response?.items?.[0]?.value?.host?.highGcActivityDetection?.detectionMode,
-        },
-        {
-          settingId: "Memory Detection",
-          enabled: response?.items?.[0]?.value?.host?.highMemoryDetection?.enabled,
-          detectionMode: response?.items?.[0]?.value?.host?.highMemoryDetection?.detectionMode,
-        },
-        {
-          settingId: "System Load",
-          enabled: response?.items?.[0]?.value?.host?.highSystemLoadDetection?.enabled,
-          detectionMode: response?.items?.[0]?.value?.host?.highSystemLoadDetection?.detectionMode,
-        }
-      ];
-      
-      setDetections(detectionsData);  // Store all detections in state
-=======
       try {
         const response = await fetchHostAnomalyDetectionData();
         const detectionsData = [
@@ -66,26 +40,20 @@ export const MainContent = ({ title, subtitle, toggleGroups, isDetailViewVisible
             settingId: "GC Activity",
             enabled: (response?.items?.[0]?.value?.host?.highGcActivityDetection?.enabled)? "enabled":"disabled",
             detectionMode: response?.items?.[0]?.value?.host?.highGcActivityDetection?.detectionMode,
+            threshold: response?.items?.[0]?.value?.host?.highGcActivityDetection?.detectionMode == "auto"? "40% GC time, 25% GC suspension": `${response?.items?.[0]?.value?.host?.highGcActivityDetection?.customThresholds?.gcTimePercentage}% GC time, ${response?.items?.[0]?.value?.host?.highGcActivityDetection?.customThresholds?.gcSuspensionPercentage}% GC suspension`
           },
           {
             settingId: "Memory Detection",
             enabled: (response?.items?.[0]?.value?.host?.highMemoryDetection?.enabled)? "enabled":"disabled",
             detectionMode: response?.items?.[0]?.value?.host?.highMemoryDetection?.detectionMode,
-          },
-          {
-            settingId: "System Load",
-            enabled: (response?.items?.[0]?.value?.host?.highSystemLoadDetection?.enabled)? "enabled":"disabled",
-            detectionMode: response?.items?.[0]?.value?.host?.highSystemLoadDetection?.detectionMode,
+            threshold: response?.items?.[0]?.value?.host?.highMemoryDetection?.detectionMode == "auto"? "90% Windows, 80% Unix": `${response?.items?.[0]?.value?.host?.highMemoryDetection?.customThresholds?.usedMemoryPercentageWindows}% Windows, ${response?.items?.[0]?.value?.host?.highMemoryDetection?.customThresholds?.usedMemoryPercentageNonWindows}% Unix`
           }
         ];
         
         setDetections(detectionsData);  // Store all detections in state
-        setLoading(false);
       } catch (error) {
         console.error("Error fetching data:", error);
-        setError(error);
       }
->>>>>>> 2d394c56c2b3b7397f950933bbf070296af9e6de
     };
 
     fetchData();
