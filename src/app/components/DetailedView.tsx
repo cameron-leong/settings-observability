@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { Flex, Surface } from '@dynatrace/strato-components/layouts';
 import { DataTableV2, type DataTableV2ColumnDef } from '@dynatrace/strato-components-preview/tables';
 import { Tab, Tabs } from '@dynatrace/strato-components-preview/navigation';
@@ -11,6 +11,9 @@ import { ProblemCard } from './ProblemCard';
 import { DataTable } from './DataTable';
 import { EnvironmentConfig } from './EnvironmentConfig';
 import { Page, TitleBar } from '@dynatrace/strato-components-preview';
+import { fetchHostAnomalyDetectionData } from '../fetchData/fetchHostAnomalyDetectionData';
+import { fetchHostCpuProblems } from '../fetchData/fetchHostCpuProblems';
+import { Problem } from 'src/types/problemResponse';
 
 // Styled Components
 const Heading = styled.div`
@@ -40,6 +43,24 @@ export const DetailedView = ({
   isDetailViewVisible,
   setIsDetailViewVisible
 }) => {
+  
+  const [problems, setProblems] = useState<Problem[]>([]);
+  useEffect(() => {
+    const fetchProblems = async () => {
+      try {
+        const response = await fetchHostCpuProblems();
+        console.log("PROBLEMS: ", response?.problems)
+        setProblems(response?.problems ?? []); // Ensure it's always an array
+      } catch (error) {
+        console.error("Something is wrong", error);
+        setProblems([]); // Ensure an empty array on error
+      }
+    };
+  
+    fetchProblems();
+  }, []);
+  
+  
   
   // Table Data (Example data - will change dynamically in the future)
   const overrideData = useMemo(() => [
@@ -121,22 +142,31 @@ export const DetailedView = ({
 
         {/* Problems Tab */}
         <Tab title="Problems">
-          <Flex flexDirection='column' gap={6}>
-            <Flex flexDirection='row' alignItems='center'>
+          <Flex flexDirection="column" gap={6}>
+            <Flex flexDirection="row" alignItems="center">
               <DavisAiSignetIcon size="large" />
               <Subheading>Problems</Subheading>
             </Flex>
-            <Subheading2>1 active, 0 closed</Subheading2>
-            <ProblemCard
-              displayId="P-25031544"
-              name="CPU Saturation"
-              duration="32 m"
-              startTime="Mar 7, 2025, 9:23 AM"
-              category="Resource contention"
-              rootCause="hostName27"
-              affectedCount={1}
-              overrideStatus="No"
-            />
+            
+            <Subheading2>{problems.length} active, 0 closed</Subheading2>
+
+            {problems.length > 0 ? (
+              problems.map((problem) => (
+                <ProblemCard
+                  key={problem.problemId} // Ensure each ProblemCard has a unique key
+                  displayId={problem.displayId}
+                  name={problem.title}
+                  duration="N/A" // Replace with actual duration logic if available
+                  startTime={new Date(problem.startTime).toLocaleString()}
+                  category={problem.severityLevel}
+                  rootCause={problem.rootCauseEntity?.name ?? "Unknown"}
+                  affectedCount={problem.affectedEntities?.length ?? 0}
+                  overrideStatus="No" // Adjust based on your logic
+                />
+              ))
+            ) : (
+              <Subheading2>No active problems</Subheading2>
+            )}
           </Flex>
         </Tab>
 

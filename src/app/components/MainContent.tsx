@@ -26,7 +26,6 @@ export const MainContent = ({ title, subtitle, toggleGroups, isDetailViewVisible
   // Fetch data on mount
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetchHostAnomalyDetectionData();
       try {
         const response = await fetchHostAnomalyDetectionData();
         const detectionsData = [
