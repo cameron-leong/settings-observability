@@ -1,0 +1,4 @@
+2025-03-17T14:40:50.565Z DEBUG [TELEMETRY] Creating a new HTTP and HTTPS interceptor for tracing
+2025-03-17T14:40:50.566Z DEBUG [TELEMETRY] Successfully initialized OpenKit
+2025-03-17T14:40:50.566Z DEBUG [TELEMETRY] Telemetry enabled: Session ID "409033672825164500"
+2025-03-17T14:40:50.567Z DEBUG [TELEMETRY] Identification successful
