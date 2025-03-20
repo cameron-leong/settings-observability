@@ -20,13 +20,11 @@ const GreyTableEntry = styled("span")`
   color: ${Colors.Text.Neutral.Subdued};
 `;
 
-export const MainContent = ({ title, subtitle, toggleGroups, isDetailViewVisible, setIsDetailViewVisible }) => {
-  const [detections, setDetections] = useState<any[]>([]);  // Store multiple detection configurations
+export const MainContent = ({ title, subtitle, toggleGroups, isDetailViewVisible, setIsDetailViewVisible, detections, setDetections }) => {
 
   // Fetch data on mount
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetchHostAnomalyDetectionData();
       try {
         const response = await fetchHostAnomalyDetectionData();
         const detectionsData = [
@@ -49,7 +47,6 @@ export const MainContent = ({ title, subtitle, toggleGroups, isDetailViewVisible
             threshold: response?.items?.[0]?.value?.host?.highMemoryDetection?.detectionMode == "auto"? "90% Windows, 80% Unix": `${response?.items?.[0]?.value?.host?.highMemoryDetection?.customThresholds?.usedMemoryPercentageWindows}% Windows, ${response?.items?.[0]?.value?.host?.highMemoryDetection?.customThresholds?.usedMemoryPercentageNonWindows}% Unix`
           }
         ];
-        
         setDetections(detectionsData);  // Store all detections in state
       } catch (error) {
         console.error("Error fetching data:", error);

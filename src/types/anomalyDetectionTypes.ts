@@ -17,6 +17,10 @@ export interface EventThresholds {
     pageFaultsPerSecondNonWindows: number;
     eventThresholds: EventThresholds;
   }
+  export interface CustomThresholdsGC {
+    gcTimePercentage: number;
+    gcSuspensionPercentage: number;
+  }
   
   export interface CustomThresholdsGeneral {
     outOfMemoryExceptionsNumber?: number;
@@ -38,7 +42,7 @@ export interface EventThresholds {
     highCpuSaturationDetection: DetectionSetting<CustomThresholdsCPU>;
     highSystemLoadDetection: DetectionSetting;
     highMemoryDetection: DetectionSetting<CustomThresholdsMemory>;
-    highGcActivityDetection: DetectionSetting;
+    highGcActivityDetection: DetectionSetting<CustomThresholdsGC>;
     outOfMemoryDetection: DetectionSetting<CustomThresholdsGeneral>;
     outOfThreadsDetection: DetectionSetting<CustomThresholdsGeneral>;
   }
