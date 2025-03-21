@@ -89,7 +89,7 @@ export const DetailedView = ({
     { id: 'New configuration', header: 'New configuration', accessor: 'newConfiguration' },
     { id: 'Previous configuration', header: 'Previous configuration', accessor: 'previousConfiguration' }
   ], []);
-  console.log("THRESHOLD:",detections?.items?.[0]?.value?.host?.highCpuSaturationDetection?.detectionMode == "auto"? "90%": detections?.items?.[0]?.value?.host?.highCpuSaturationDetection?.customThresholds?.cpuSaturation)
+  console.log("THRESHOLD:",detections)
   return (
     <Page.DetailView
       preferredWidth={1000}
@@ -120,12 +120,12 @@ export const DetailedView = ({
             <Flex flexDirection='row' alignItems='center'>
               <EnvironmentConfig
                 format="standard"
-                threshold={detections?.items?.[0]?.value?.host?.highCpuSaturationDetection?.detectionMode == "auto"? "90%": detections?.items?.[0]?.value?.host?.highCpuSaturationDetection?.customThresholds?.cpuSaturation}
-                violatingSamples={detections?.items?.[0]?.value?.host?.highCpuSaturationDetection?.detectionMode == "auto"? 3: detections?.items?.[0]?.value?.host?.highCpuSaturationDetection?.customThresholds?.eventThresholds?.violatingSamples}
-                window={detections?.items?.[0]?.value?.host?.highCpuSaturationDetection?.detectionMode == "auto"? 5: detections?.items?.[0]?.value?.host?.highCpuSaturationDetection?.customThresholds?.eventThresholds?.violatingEvaluationWindow}
-                dealertingSamples={detections?.items?.[0]?.value?.host?.highCpuSaturationDetection?.detectionMode == "auto"? 5: detections?.items?.[0]?.value?.host?.highCpuSaturationDetection?.customThresholds?.eventThresholds?.dealertingSamples}
-                dealertingWindow={detections?.items?.[0]?.value?.host?.highCpuSaturationDetection?.detectionMode == "auto"? 5: detections?.items?.[0]?.value?.host?.highCpuSaturationDetection?.customThresholds?.eventThresholds?.dealertingEvaluationWindow}
-                enabled={detections?.items?.[0]?.value?.host?.highCpuSaturationDetection?.enabled ? "enabled" : "disabled"}
+                threshold={detections[0]?.threshold}
+                violatingSamples={detections[0]?.violatingSamples}
+                window={detections[0]?.window}
+                dealertingSamples={detections[0]?.dealertingSamples}
+                dealertingWindow={detections[0]?.dealertingWindow}
+                enabled={detections[0]?.enabled}
               />
             </Flex>
           </Surface>

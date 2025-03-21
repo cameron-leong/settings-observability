@@ -1,8 +1,0 @@
-2025-03-03T16:54:39.185Z DEBUG [PLUGIN] Searching for configuration file
-2025-03-03T16:54:39.185Z DEBUG [PLUGIN] Found c:\Users\cameron.leong\OneDrive - Dynatrace\SettingsApp\settings-observability\app.config.json
-2025-03-03T16:54:39.405Z DEBUG [PLUGIN] Searching for configuration file
-2025-03-03T16:54:39.426Z DEBUG [PLUGIN] Found c:\Users\cameron.leong\OneDrive - Dynatrace\SettingsApp\settings-observability\app.config.json
-2025-03-03T16:54:39.438Z DEBUG [PLUGIN] Searching for configuration file
-2025-03-03T16:54:39.441Z DEBUG [PLUGIN] Found c:\Users\cameron.leong\OneDrive - Dynatrace\SettingsApp\settings-observability\app.config.json
-2025-03-03T16:54:39.709Z DEBUG [PLUGIN] Searching for configuration file
-2025-03-03T16:54:39.710Z DEBUG [PLUGIN] Found c:\Users\cameron.leong\OneDrive - Dynatrace\SettingsApp\settings-observability\app.config.json
