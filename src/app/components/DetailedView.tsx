@@ -14,6 +14,9 @@ import { Page, TitleBar } from '@dynatrace/strato-components-preview';
 import { fetchHostAnomalyDetectionData } from '../fetchData/fetchHostAnomalyDetectionData';
 import { fetchHostCpuProblems } from '../fetchData/fetchHostCpuProblems';
 import { Problem } from 'src/types/problemResponse';
+import { DetailedViewOverview } from './DetailedViewOverview';
+import { DetailedViewProblems } from './DetailedViewProblems';
+import { DetailedViewRevisionHistory } from './DetailedViewRevisionHistory';
 
 // Styled Components
 const Heading = styled.div`
@@ -110,72 +113,25 @@ export const DetailedView = ({
 
       {/* Tabs Section */}
       <Tabs>
-        {/* Overview Tab */}
         <Tab title="Overview">
-          <Subheading>Description</Subheading>
-          <Surface elevation='flat'>{description}</Surface>
-
-          <Subheading>Environment-wide configuration</Subheading>
-          <Surface>
-            <Flex flexDirection='row' alignItems='center'>
-              <EnvironmentConfig
-                format="standard"
-                threshold={detections[0]?.threshold}
-                violatingSamples={detections[0]?.violatingSamples}
-                window={detections[0]?.window}
-                dealertingSamples={detections[0]?.dealertingSamples}
-                dealertingWindow={detections[0]?.dealertingWindow}
-                enabled={detections[0]?.enabled}
-              />
-            </Flex>
-          </Surface>
-
-          <Subheading>Overrides</Subheading>
-          <Surface>
-            <Flex justifyContent="start">
-              <ToggleButtonGroup defaultValue="HostGroups">
-                <ToggleButtonGroupItem value="HostGroups">Host Groups</ToggleButtonGroupItem>
-                <ToggleButtonGroupItem value="Hosts">Hosts</ToggleButtonGroupItem>
-              </ToggleButtonGroup>
-            </Flex>
-            <DataTableV2 columns={overrideColumns} data={overrideData} variant={{ verticalDividers: true }} resizable fullWidth />
-          </Surface>
+          <DetailedViewOverview 
+            description={description} 
+            isDetailViewVisible={isDetailViewVisible}
+            setIsDetailViewVisible={setIsDetailViewVisible}
+            detections={detections}
+          />
         </Tab>
 
         {/* Problems Tab */}
         <Tab title="Problems">
-          <Flex flexDirection="column" gap={6}>
-            <Flex flexDirection="row" alignItems="center">
-              <DavisAiSignetIcon size="large" />
-              <Subheading>Problems</Subheading>
-            </Flex>
-            
-            <Subheading2>{problems.length} active, 0 closed</Subheading2>
-
-            {problems.length > 0 ? (
-              problems.map((problem) => (
-                <ProblemCard
-                  key={problem.problemId} // Ensure each ProblemCard has a unique key
-                  displayId={problem.displayId}
-                  name={problem.title}
-                  duration="N/A" // Replace with actual duration logic if available
-                  startTime={new Date(problem.startTime).toLocaleString()}
-                  category={problem.severityLevel}
-                  rootCause={problem.rootCauseEntity?.name ?? "Unknown"}
-                  affectedCount={problem.affectedEntities?.length ?? 0}
-                  overrideStatus="No" // Adjust based on your logic
-                />
-              ))
-            ) : (
-              <Subheading2>No active problems</Subheading2>
-            )}
-          </Flex>
+          <DetailedViewProblems
+            problems={problems}
+          />
         </Tab>
 
         {/* Revision History Tab */}
         <Tab title="Revision history">
-          <Subheading>Recent configuration changes</Subheading>
-          <DataTable columns={revisionHistoryColumns} data={revisionHistoryData} />
+          <DetailedViewRevisionHistory/>
         </Tab>
       </Tabs>
     </Page.DetailView>

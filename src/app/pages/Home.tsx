@@ -36,7 +36,7 @@ export const Home = () => {
           href="/main"
           inAppLink
           imgSrc={
-            theme === "light" ? "./assets/anomaly_logo_dark.svg" : "./assets/anomaly_logo_light.svg"
+            theme === "light" ? "./assets/threshold_logo_dark.svg.svg" : "./assets/threshold_logo_light.svg"
           }
           name="Anomaly Detection"
         />

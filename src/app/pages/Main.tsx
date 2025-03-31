@@ -36,7 +36,7 @@ const toggleGroups = [
   }
 ]
 
-export const MainPage = ({appName}) => {
+export const Main = ({appName}) => {
   //Handle states
   const [isDetailViewVisible, setIsDetailViewVisible] = useState<boolean>(false);
   const [detections, setDetections] = useState<any[]>([]);
