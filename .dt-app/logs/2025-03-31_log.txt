@@ -36,57 +36,7 @@
 2025-03-31T10:09:41.802Z DEBUG [PLUGIN] Found d:\Dev\Settings Observability\settings-observability\app.config.json
 2025-03-31T10:09:41.860Z DEBUG [PLUGIN] Searching for configuration file
 2025-03-31T10:09:41.870Z DEBUG [PLUGIN] Found d:\Dev\Settings Observability\settings-observability\app.config.json
-2025-03-31T10:09:45.865Z INFO Initial ui build finished successfully.
-2025-03-31T10:09:45.940Z DEBUG [BUILD_TIME] Built UI in 13280.241899999994ms.
-2025-03-31T10:09:45.967Z INFO 
-────────────────────────────────────────────────────────────────────────────────
-
-  App Shell URL: https://guu84124.apps.dynatrace.com/ui/apps/local-dev-server/?locationAppIds=http%3A%2F%2Flocalhost%3A3000%2Fui%2Clocal-dev-server
-  Local URL: http://localhost:3000/ui
-  
-  Ready for development! 💻
-
-────────────────────────────────────────────────────────────────────────────────
-
-2025-03-31T10:09:48.187Z INFO  DT-APP:  
-    ╭────────────────────────────────────────────────────────────────╮
-    │                                                                │
-    │   Updates for @dynatrace packages available:                   │
-    │   @dynatrace-sdk/client-classic-environment-v2 3.6.7 → 3.6.8   │
-    │   @dynatrace-sdk/client-query 1.17.1 → 1.18.1                  │
-    │   @dynatrace-sdk/react-hooks 0.7.1 → 1.0.0                     │
-    │   @dynatrace/strato-components 0.85.100 → 1.1.0                │
-    │   @dynatrace/strato-components-preview 0.117.53 → 1.1.4        │
-    │   @dynatrace/strato-design-tokens 0.20.40 → 1.0.0              │
-    │   @dynatrace/strato-icons 0.39.4 → 1.1.0                       │
-    │   dt-app 0.136.3 → 0.138.0                                     │
-    │   To update, run npx dt-app update                             │
-    │                                                                │
-    ╰────────────────────────────────────────────────────────────────╯
- 
-2025-03-31T10:09:49.671Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
-2025-03-31T10:09:49.671Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3Dfb98caff-dde4-485f-a37f-097e805ca8f0&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
-2025-03-31T10:09:49.671Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
-2025-03-31T10:09:50.327Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
-2025-03-31T10:09:50.327Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3Dfb98caff-dde4-485f-a37f-097e805ca8f0&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
-2025-03-31T10:09:50.327Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
-2025-03-31T10:12:27.104Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
-
-2025-03-31T10:12:29.038Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
-
-2025-03-31T10:12:29.827Z INFO Ui build finished successfully.
-2025-03-31T10:12:29.841Z DEBUG [BUILD_TIME] Built UI in 786.5646999999881ms.
-2025-03-31T10:12:29.842Z INFO Reloading browser
-2025-03-31T10:12:29.909Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
-2025-03-31T10:12:29.909Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3Dfb98caff-dde4-485f-a37f-097e805ca8f0&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
-2025-03-31T10:12:29.909Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
-2025-03-31T10:13:00.839Z DEBUG [TYPE_CHECKER] Watch status change: message TS6032: File change detected. Starting incremental compilation...
-
-2025-03-31T10:13:02.683Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
-
-2025-03-31T10:13:02.729Z INFO Ui build finished successfully.
-2025-03-31T10:13:02.743Z DEBUG [BUILD_TIME] Built UI in 2063.445399999997ms.
-2025-03-31T10:13:02.744Z INFO Reloading browser
-2025-03-31T10:13:02.813Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
-2025-03-31T10:13:02.813Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3Dfb98caff-dde4-485f-a37f-097e805ca8f0&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
-2025-03-31T10:13:02.813Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-31T10:17:30.353Z DEBUG [PLUGIN] Searching for configuration file
+2025-03-31T10:17:30.354Z DEBUG [PLUGIN] Found c:\Users\cameron.leong\OneDrive - Dynatrace\SettingsApp\settings-observability\app.config.json
+2025-03-31T10:17:30.447Z DEBUG [PLUGIN] Searching for configuration file
+2025-03-31T10:17:30.494Z DEBUG [PLUGIN] Found c:\Users\cameron.leong\OneDrive - Dynatrace\SettingsApp\settings-observability\app.config.json
