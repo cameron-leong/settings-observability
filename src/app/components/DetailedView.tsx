@@ -41,7 +41,9 @@ export const DetailedView = ({
   subtitle = "Default Subtitle",
   description = "No description available",
   isDetailViewVisible,
-  setIsDetailViewVisible
+  setIsDetailViewVisible,
+  detections,
+
 }) => {
   
   const [problems, setProblems] = useState<Problem[]>([]);
@@ -87,7 +89,7 @@ export const DetailedView = ({
     { id: 'New configuration', header: 'New configuration', accessor: 'newConfiguration' },
     { id: 'Previous configuration', header: 'Previous configuration', accessor: 'previousConfiguration' }
   ], []);
-
+  console.log("THRESHOLD:",detections)
   return (
     <Page.DetailView
       preferredWidth={1000}
@@ -118,12 +120,12 @@ export const DetailedView = ({
             <Flex flexDirection='row' alignItems='center'>
               <EnvironmentConfig
                 format="standard"
-                threshold={95}
-                violatingSamples={3}
-                window={5}
-                dealertingSamples={5}
-                dealertingWindow={5}
-                enabled="enabled"
+                threshold={detections[0]?.threshold}
+                violatingSamples={detections[0]?.violatingSamples}
+                window={detections[0]?.window}
+                dealertingSamples={detections[0]?.dealertingSamples}
+                dealertingWindow={detections[0]?.dealertingWindow}
+                enabled={detections[0]?.enabled}
               />
             </Flex>
           </Surface>

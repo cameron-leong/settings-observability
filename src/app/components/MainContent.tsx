@@ -20,8 +20,7 @@ const GreyTableEntry = styled("span")`
   color: ${Colors.Text.Neutral.Subdued};
 `;
 
-export const MainContent = ({ title, subtitle, toggleGroups, isDetailViewVisible, setIsDetailViewVisible }) => {
-  const [detections, setDetections] = useState<any[]>([]);  // Store multiple detection configurations
+export const MainContent = ({ title, subtitle, toggleGroups, isDetailViewVisible, setIsDetailViewVisible, detections, setDetections }) => {
 
   // Fetch data on mount
   useEffect(() => {
@@ -33,7 +32,12 @@ export const MainContent = ({ title, subtitle, toggleGroups, isDetailViewVisible
             settingId: "CPU Saturation",
             enabled: (response?.items?.[0]?.value?.host?.highCpuSaturationDetection?.enabled)? "enabled":"disabled",
             detectionMode: response?.items?.[0]?.value?.host?.highCpuSaturationDetection?.detectionMode,
-            threshold: response?.items?.[0]?.value?.host?.highCpuSaturationDetection?.detectionMode == "auto"? "90%": response?.items?.[0]?.value?.host?.highCpuSaturationDetection?.customThresholds?.cpuSaturation
+            threshold: response?.items?.[0]?.value?.host?.highCpuSaturationDetection?.detectionMode == "auto"? "90%": response?.items?.[0]?.value?.host?.highCpuSaturationDetection?.customThresholds?.cpuSaturation,
+            violatingSamples: response?.items?.[0]?.value?.host?.highCpuSaturationDetection?.detectionMode == "auto"? 3: detections?.items?.[0]?.value?.host?.highCpuSaturationDetection?.customThresholds?.eventThresholds?.violatingSamples,
+            window: response?.items?.[0]?.value?.host?.highCpuSaturationDetection?.detectionMode == "auto"? 5: detections?.items?.[0]?.value?.host?.highCpuSaturationDetection?.customThresholds?.eventThresholds?.violatingEvaluationWindow,
+            dealertingSamples: response?.items?.[0]?.value?.host?.highCpuSaturationDetection?.detectionMode == "auto"? 5: detections?.items?.[0]?.value?.host?.highCpuSaturationDetection?.customThresholds?.eventThresholds?.dealertingSamples,
+            dealertingWindow: response?.items?.[0]?.value?.host?.highCpuSaturationDetection?.detectionMode == "auto"? 5: detections?.items?.[0]?.value?.host?.highCpuSaturationDetection?.customThresholds?.eventThresholds?.dealertingEvaluationWindow
+
           },
           {
             settingId: "GC Activity",
@@ -48,7 +52,6 @@ export const MainContent = ({ title, subtitle, toggleGroups, isDetailViewVisible
             threshold: response?.items?.[0]?.value?.host?.highMemoryDetection?.detectionMode == "auto"? "90% Windows, 80% Unix": `${response?.items?.[0]?.value?.host?.highMemoryDetection?.customThresholds?.usedMemoryPercentageWindows}% Windows, ${response?.items?.[0]?.value?.host?.highMemoryDetection?.customThresholds?.usedMemoryPercentageNonWindows}% Unix`
           }
         ];
-        
         setDetections(detectionsData);  // Store all detections in state
       } catch (error) {
         console.error("Error fetching data:", error);
