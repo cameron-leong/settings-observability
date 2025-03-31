@@ -1,5 +1,5 @@
 import React from "react";
-
+import styled from "styled-components";
 import { useCurrentTheme } from "@dynatrace/strato-components/core";
 import { Flex } from "@dynatrace/strato-components/layouts";
 import {
@@ -8,6 +8,13 @@ import {
   Strong,
 } from "@dynatrace/strato-components/typography";
 import { Card } from "../components/Card";
+import { Typography } from "@dynatrace/strato-design-tokens";
+
+const Subheading = styled.div`
+  font-family: ${Typography.Heading.Level5.Family};
+  font-size: ${Typography.Heading.Level5.Size};
+  font-weight: ${Typography.Heading.Level5.Weight};
+`;
 
 export const Home = () => {
   const theme = useCurrentTheme();
@@ -22,6 +29,7 @@ export const Home = () => {
       ></img>
 
       <Heading>Welcome to Settings Observability</Heading>
+      <Subheading>Seamlessly track custom configurations across your environment</Subheading>
 
       <Flex gap={48} paddingTop={64} flexFlow="wrap">
         <Card
@@ -30,7 +38,15 @@ export const Home = () => {
           imgSrc={
             theme === "light" ? "./assets/anomaly_logo_dark.svg" : "./assets/anomaly_logo_light.svg"
           }
-          name="Open Explorer"
+          name="Anomaly Detection"
+        />
+        <Card
+          href="/main"
+          inAppLink
+          imgSrc={
+            theme === "light" ? "./assets/anomaly_logo_dark.svg" : "./assets/anomaly_logo_light.svg"
+          }
+          name="Operations"
         />
       </Flex>
     </Flex>

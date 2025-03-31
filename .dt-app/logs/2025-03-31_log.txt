@@ -1,0 +1,38 @@
+2025-03-31T10:08:58.529Z DEBUG [TELEMETRY] Creating a new HTTP and HTTPS interceptor for tracing
+2025-03-31T10:08:58.529Z DEBUG [TELEMETRY] Successfully initialized OpenKit
+2025-03-31T10:08:58.529Z DEBUG [TELEMETRY] Telemetry enabled: Session ID "679274450098107800"
+2025-03-31T10:08:58.530Z DEBUG [TELEMETRY] Identification successful
+2025-03-31T10:08:58.827Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-31T10:08:58.827Z DEBUG [HTTP(S)] Execute GET request without allowing redirection to 'https://guu84124.apps.dynatrace.com/platform/oauth2/authorization/dynatrace-sso'
+2025-03-31T10:08:59.245Z DEBUG [PLUGIN] Searching for configuration file
+2025-03-31T10:08:59.246Z DEBUG [PLUGIN] Found d:\Dev\Settings Observability\settings-observability\app.config.json
+2025-03-31T10:08:59.314Z DEBUG [PLUGIN] Searching for configuration file
+2025-03-31T10:08:59.314Z DEBUG [PLUGIN] Found d:\Dev\Settings Observability\settings-observability\app.config.json
+2025-03-31T10:09:00.137Z DEBUG [HTTP(S)] Resolved URL is https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3Dfb98caff-dde4-485f-a37f-097e805ca8f0&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-31T10:09:00.137Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-31T10:09:00.137Z DEBUG [AUTH] OAuth2 token expired with a value of: -1099107.137 seconds
+2025-03-31T10:09:00.228Z DEBUG [AUTH] Getting the token via the refresh_token process has failed with: Error: Bad Request. Proceeding with SSO flow instead.
+2025-03-31T10:09:00.228Z INFO  DT-APP:  Authenticate with Dynatrace SSO
+2025-03-31T10:09:00.427Z DEBUG [AUTH] SSO-link https://sso.dynatrace.com/oauth2/authorize?client_id=dt0s08.dt-app-local&redirect_uri=http%3A%2F%2Flocalhost%3A5343%2Fauth%2Flogin&state=b9ab2b400342b3ddac30f60d4a6defe7520af9a7&response_type=code&code_challenge_method=S256&code_challenge=DltP5QU7i1MOoA4DkTrwvfJjz5n3RWEAELFrDpAKGwE&scope=app-engine%3Aapps%3Arun%20storage%3Alogs%3Aread%20storage%3Abuckets%3Aread%20settings%3Aobjects%3Aread%20environment-api%3Aproblems%3Aread
+2025-03-31T10:09:21.701Z DEBUG [AUTH] Received authorized code for oAuth
+2025-03-31T10:09:22.876Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-31T10:09:22.876Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3Dfb98caff-dde4-485f-a37f-097e805ca8f0&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-31T10:09:22.876Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-31T10:09:23.665Z INFO  DT-APP:  Started local development server
+2025-03-31T10:09:23.665Z DEBUG [AUTH] Retrieving SSO-URL for environment 'https://guu84124.apps.dynatrace.com'
+2025-03-31T10:09:23.665Z DEBUG [HTTP(S)] Found resolved URL in cache: https://sso.dynatrace.com/action/signin?goto=https%3A%2F%2Fsso.dynatrace.com%3A443%2Foauth2%2Fauthorize%2Fredirect%3FoAuth2CtxUuid%3Dfb98caff-dde4-485f-a37f-097e805ca8f0&oAuth2RedirectUri=https%3A%2F%2Fguu84124.apps.dynatrace.com%2Fplatform%2Flogin%2Foauth2%2Fcode%2Fdynatrace-sso
+2025-03-31T10:09:23.680Z DEBUG [AUTH] Using SSO-URL 'https://sso.dynatrace.com'
+2025-03-31T10:09:23.680Z DEBUG [AUTH] OAuth2 token expired with a value of: -1101015.68 seconds
+2025-03-31T10:09:23.987Z DEBUG [TYPE_CHECKER] Watch status change: message TS6031: Starting compilation in watch mode...
+
+2025-03-31T10:09:32.552Z DEBUG [TYPE_CHECKER] Watch status change: message TS6194: Found 0 errors. Watching for file changes.
+
+2025-03-31T10:09:32.575Z DEBUG [AUTH] Getting the token via the refresh_token process has failed with: Error: Bad Request. Proceeding with SSO flow instead.
+2025-03-31T10:09:32.575Z INFO  DT-APP:  Authenticate with Dynatrace SSO
+2025-03-31T10:09:33.080Z DEBUG [AUTH] SSO-link https://sso.dynatrace.com/oauth2/authorize?client_id=dt0s08.dt-app-local&redirect_uri=http%3A%2F%2Flocalhost%3A5343%2Fauth%2Flogin&state=b9ab2b400342b3ddac30f60d4a6defe7520af9a7&response_type=code&code_challenge_method=S256&code_challenge=DltP5QU7i1MOoA4DkTrwvfJjz5n3RWEAELFrDpAKGwE
+2025-03-31T10:09:33.614Z DEBUG [PLUGIN] Searching for configuration file
+2025-03-31T10:09:33.615Z DEBUG [PLUGIN] Found d:\Dev\Settings Observability\settings-observability\app.config.json
+2025-03-31T10:09:41.802Z DEBUG [PLUGIN] Searching for configuration file
+2025-03-31T10:09:41.802Z DEBUG [PLUGIN] Found d:\Dev\Settings Observability\settings-observability\app.config.json
+2025-03-31T10:09:41.860Z DEBUG [PLUGIN] Searching for configuration file
+2025-03-31T10:09:41.870Z DEBUG [PLUGIN] Found d:\Dev\Settings Observability\settings-observability\app.config.json
