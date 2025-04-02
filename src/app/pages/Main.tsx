@@ -40,7 +40,7 @@ export const Main = ({appName}) => {
   //Handle states
   const [isDetailViewVisible, setIsDetailViewVisible] = useState<boolean>(false);
   const [detections, setDetections] = useState<any[]>([]);
-
+  const [selectedSetting, setSelectedSetting] = useState(null);
   return (
     <Page>
       < SideBar 
@@ -56,6 +56,7 @@ export const Main = ({appName}) => {
         setIsDetailViewVisible={setIsDetailViewVisible}
         detections={detections}
         setDetections={setDetections}
+        setSelectedSetting={setSelectedSetting}
       />
       < DetailedView
         title={"CPU Saturation"} 
@@ -64,6 +65,7 @@ export const Main = ({appName}) => {
         isDetailViewVisible={isDetailViewVisible} 
         setIsDetailViewVisible={setIsDetailViewVisible}
         detections={detections}
+        selectedSetting={selectedSetting}
       />
     </Page>
   );

@@ -1,18 +1,12 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { Flex, Surface } from '@dynatrace/strato-components/layouts';
-import { DataTableV2, type DataTableV2ColumnDef } from '@dynatrace/strato-components-preview/tables';
+import {  type DataTableV2ColumnDef } from '@dynatrace/strato-components-preview/tables';
 import { Tab, Tabs } from '@dynatrace/strato-components-preview/navigation';
 import { CriticalIcon, DavisAiSignetIcon } from '@dynatrace/strato-icons';
-import { ToggleButtonGroup, ToggleButtonGroupItem } from '@dynatrace/strato-components-preview/buttons';
 import Colors from '@dynatrace/strato-design-tokens/colors';
 import { Typography } from '@dynatrace/strato-design-tokens';
 import styled from "styled-components";
-import { ProblemCard } from './ProblemCard';
-import { DataTable } from './DataTable';
-import { EnvironmentConfig } from './EnvironmentConfig';
 import { Page, TitleBar } from '@dynatrace/strato-components-preview';
-import { fetchHostAnomalyDetectionData } from '../fetchData/fetchHostAnomalyDetectionData';
-import { fetchHostCpuProblems } from '../fetchData/fetchHostCpuProblems';
+import { getHostCpuProblems } from '../../../api/get-cpu-problems';
 import { Problem } from 'src/types/problemResponse';
 import { DetailedViewOverview } from './DetailedViewOverview';
 import { DetailedViewProblems } from './DetailedViewProblems';
@@ -46,14 +40,14 @@ export const DetailedView = ({
   isDetailViewVisible,
   setIsDetailViewVisible,
   detections,
-
+  selectedSetting
 }) => {
   
   const [problems, setProblems] = useState<Problem[]>([]);
   useEffect(() => {
     const fetchProblems = async () => {
       try {
-        const response = await fetchHostCpuProblems();
+        const response = await getHostCpuProblems();
         console.log("PROBLEMS: ", response?.problems)
         setProblems(response?.problems ?? []); // Ensure it's always an array
       } catch (error) {
@@ -115,7 +109,7 @@ export const DetailedView = ({
       <Tabs>
         <Tab title="Overview">
           <DetailedViewOverview 
-            description={description} 
+            description={`Details about ${selectedSetting?.settingId}`}
             isDetailViewVisible={isDetailViewVisible}
             setIsDetailViewVisible={setIsDetailViewVisible}
             detections={detections}

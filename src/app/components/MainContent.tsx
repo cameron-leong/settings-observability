@@ -5,7 +5,7 @@ import {
   Page,
   TitleBar,
 } from '@dynatrace/strato-components-preview/layouts';
-import { fetchHostAnomalyDetectionData } from '../fetchData/fetchHostAnomalyDetectionData'; // Import the API function
+import { getGlobalHostConfigs } from '../../../api/get-global-host-configs'; // Import the API function
 import { Card } from './Card';
 import { DataTable } from './DataTable';
 import { LevelToggle } from './LevelToggle';
@@ -20,13 +20,18 @@ const GreyTableEntry = styled("span")`
   color: ${Colors.Text.Neutral.Subdued};
 `;
 
-export const MainContent = ({ title, subtitle, toggleGroups, isDetailViewVisible, setIsDetailViewVisible, detections, setDetections }) => {
+export const MainContent = ({ title, subtitle, toggleGroups, isDetailViewVisible, setIsDetailViewVisible, detections, setDetections, setSelectedSetting }) => {
 
+  const handleRowClick = (setting) => {
+    console.log("Clicked setting:", setting.settingId); // Debug log
+    setSelectedSetting(setting);
+    setIsDetailViewVisible(true);
+  };
   // Fetch data on mount
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetchHostAnomalyDetectionData();
+        const response = await getGlobalHostConfigs();
         const detectionsData = [
           { 
             settingId: "CPU Saturation",
@@ -62,23 +67,42 @@ export const MainContent = ({ title, subtitle, toggleGroups, isDetailViewVisible
   }, []);
 
   // Define table columns
-  const columns = useMemo<DataTableV2ColumnDef<(typeof detections)[number]>[]>(() => [
-    { id: 'setting', header: 'Setting', accessor: 'settingId' },
-    { id: 'detectionMode', header: 'Detection Mode', accessor: 'detectionMode' },
-    { id: 'enabled', header: 'Enabled', accessor: 'enabled' },
-    { id: 'threshold', header: 'Threshold', accessor: 'threshold' }
-  ].map(column => ({
-    ...column,
-    cell: ({ value, rowData }) => (
-      <DataTableV2.DefaultCell>
-        {rowData.enabled=="enabled" ? (
-          value
-        ) : (
-          <GreyTableEntry>{String(value)}</GreyTableEntry>
-        )}
-      </DataTableV2.DefaultCell>
-    )
-  })), []);
+  const columns = useMemo<DataTableV2ColumnDef<(typeof detections)[number]>[]>(() =>
+    [
+      {
+        id: 'setting',
+        header: 'Setting',
+        accessor: 'settingId',
+        cell: ({ value, rowData }) => (
+          <DataTableV2.DefaultCell>
+            <div 
+              onClick={() => handleRowClick(rowData)} 
+              tabIndex={0} // Makes it clickable and hoverable
+              style={{ 
+                cursor: "pointer", 
+                color: Colors.Text.Primary.Default, 
+                textDecoration: "underline",
+                display: "inline"
+              }}
+            >
+              {value}
+            </div>
+          </DataTableV2.DefaultCell>
+        )
+      },
+      { id: 'detectionMode', header: 'Detection Mode', accessor: 'detectionMode' },
+      { id: 'enabled', header: 'Enabled', accessor: 'enabled' },
+      { id: 'threshold', header: 'Threshold', accessor: 'threshold' }
+    ].map(column => ({
+      ...column,
+      cell: column.cell || (({ value }) => (
+        <DataTableV2.DefaultCell>{value}</DataTableV2.DefaultCell>
+      ))
+    }))
+  , []);
+  
+  
+  
   
 
   const theme = useCurrentTheme();
@@ -96,7 +120,9 @@ export const MainContent = ({ title, subtitle, toggleGroups, isDetailViewVisible
         </TitleBar.Action>
       </TitleBar>
       <LevelToggle toggleGroups={toggleGroups} />
-        <DataTable columns={columns} data={detections} /> 
+        <DataTable columns={columns} data={detections}>
+
+        </DataTable> 
     </Page.Main>
   );
 };

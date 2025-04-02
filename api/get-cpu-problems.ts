@@ -1,7 +1,7 @@
 import { problemsClient } from '@dynatrace-sdk/client-classic-environment-v2';
-import { ProblemResponse } from 'src/types/problemResponse';
+import { ProblemResponse } from '../src/types/problemResponse';
 
-export async function fetchHostCpuProblems() {
+export async function getHostCpuProblems() {
   try {
     const data = await problemsClient.getProblems({
         problemSelector: "text(CPU saturation)"

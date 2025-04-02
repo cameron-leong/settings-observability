@@ -1,7 +1,7 @@
 import { settingsObjectsClient } from '@dynatrace-sdk/client-classic-environment-v2';
-import { AnomalyDetectionResponse } from 'src/types/anomalyDetectionTypes';
+import { AnomalyDetectionResponse } from '../src/types/anomalyDetectionTypes'
 
-export async function fetchHostAnomalyDetectionData() {
+export async function getGlobalHostConfigs() {
   try {
     const data = await settingsObjectsClient.getEffectiveSettingsValues({
       schemaIds: 'builtin:anomaly-detection.infrastructure-hosts',
