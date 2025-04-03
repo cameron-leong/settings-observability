@@ -59,8 +59,6 @@ export const DetailedView = ({
     fetchProblems();
   }, []);
   
-  
-  
   // Table Data (Example data - will change dynamically in the future)
   const overrideData = useMemo(() => [
     { entityName: "myHostGroup", threshold: 90, violatingSamples: 3, slidingWindow: 5 },
@@ -113,6 +111,7 @@ export const DetailedView = ({
             isDetailViewVisible={isDetailViewVisible}
             setIsDetailViewVisible={setIsDetailViewVisible}
             detections={detections}
+            selectedSetting={selectedSetting}
           />
         </Tab>
 

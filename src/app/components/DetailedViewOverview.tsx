@@ -1,14 +1,11 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { Flex, Surface } from '@dynatrace/strato-components/layouts';
 import { DataTableV2, type DataTableV2ColumnDef } from '@dynatrace/strato-components-preview/tables';
-import { Tab, Tabs } from '@dynatrace/strato-components-preview/navigation';
-import { CriticalIcon, DavisAiSignetIcon } from '@dynatrace/strato-icons';
 import { ToggleButtonGroup, ToggleButtonGroupItem } from '@dynatrace/strato-components-preview/buttons';
 import Colors from '@dynatrace/strato-design-tokens/colors';
 import { Typography } from '@dynatrace/strato-design-tokens';
 import styled from "styled-components";
 import { EnvironmentConfig } from './EnvironmentConfig';
-import { Page, TitleBar } from '@dynatrace/strato-components-preview';
 
 // Styled Components
 const Heading = styled.div`
@@ -36,9 +33,17 @@ export const DetailedViewOverview = ({
   isDetailViewVisible,
   setIsDetailViewVisible,
   detections,
-
+  selectedSetting
 }) => {
-  
+  console.log("DETECTIONS:\n", detections);
+  console.log("SELECTED SETTING:\n", selectedSetting);
+
+  // Find the detection matching the selectedSetting
+  const selectedDetection = useMemo(
+    () => detections.find(detection => detection.settingId === selectedSetting.settingId),
+    [detections, selectedSetting]
+  );
+
   // Table Data (Example data - will change dynamically in the future)
   const overrideData = useMemo(() => [
     { entityName: "myHostGroup", threshold: 90, violatingSamples: 3, slidingWindow: 5 },
@@ -55,34 +60,38 @@ export const DetailedViewOverview = ({
 
   return (
     <div>
-        <Subheading>Description</Subheading>
-        <Surface elevation='flat'>{description}</Surface>
+      <Subheading>Description</Subheading>
+      <Surface elevation='flat'>{description}</Surface>
 
-        <Subheading>Environment-wide configuration</Subheading>
-        <Surface>
+      <Subheading>Global configuration</Subheading>
+      <Surface>
         <Flex flexDirection='row' alignItems='center'>
+          {selectedDetection ? (
             <EnvironmentConfig
-            format="standard"
-            threshold={detections[0]?.threshold}
-            violatingSamples={detections[0]?.violatingSamples}
-            window={detections[0]?.window}
-            dealertingSamples={detections[0]?.dealertingSamples}
-            dealertingWindow={detections[0]?.dealertingWindow}
-            enabled={detections[0]?.enabled}
+              format="standard"
+              threshold={selectedDetection.threshold}
+              violatingSamples={selectedDetection.violatingSamples}
+              window={selectedDetection.window}
+              dealertingSamples={selectedDetection.dealertingSamples}
+              dealertingWindow={selectedDetection.dealertingWindow}
+              enabled={selectedDetection.enabled}
             />
+          ) : (
+            <div>No detection found for the selected setting.</div>
+          )}
         </Flex>
-        </Surface>
+      </Surface>
 
-        <Subheading>Overrides</Subheading>
-        <Surface>
+      <Subheading>Overrides</Subheading>
+      <Surface>
         <Flex justifyContent="start">
-            <ToggleButtonGroup defaultValue="HostGroups">
+          <ToggleButtonGroup defaultValue="HostGroups">
             <ToggleButtonGroupItem value="HostGroups">Host Groups</ToggleButtonGroupItem>
             <ToggleButtonGroupItem value="Hosts">Hosts</ToggleButtonGroupItem>
-            </ToggleButtonGroup>
+          </ToggleButtonGroup>
         </Flex>
         <DataTableV2 columns={overrideColumns} data={overrideData} variant={{ verticalDividers: true }} resizable fullWidth />
-        </Surface>
+      </Surface>
     </div>
   );
 };
