@@ -37,7 +37,9 @@ export const MainContent = ({ title, subtitle, toggleGroups, isDetailViewVisible
             settingId: "CPU Saturation",
             enabled: (response?.items?.[0]?.value?.host?.highCpuSaturationDetection?.enabled)? "enabled":"disabled",
             detectionMode: response?.items?.[0]?.value?.host?.highCpuSaturationDetection?.detectionMode,
-            threshold: response?.items?.[0]?.value?.host?.highCpuSaturationDetection?.detectionMode == "auto"? "90%": response?.items?.[0]?.value?.host?.highCpuSaturationDetection?.customThresholds?.cpuSaturation,
+            thresholds:{
+              threshold: response?.items?.[0]?.value?.host?.highCpuSaturationDetection?.detectionMode == "auto"? "90": response?.items?.[0]?.value?.host?.highCpuSaturationDetection?.customThresholds?.cpuSaturation,
+            },
             violatingSamples: response?.items?.[0]?.value?.host?.highCpuSaturationDetection?.detectionMode == "auto"? 3: detections?.items?.[0]?.value?.host?.highCpuSaturationDetection?.customThresholds?.eventThresholds?.violatingSamples,
             window: response?.items?.[0]?.value?.host?.highCpuSaturationDetection?.detectionMode == "auto"? 5: detections?.items?.[0]?.value?.host?.highCpuSaturationDetection?.customThresholds?.eventThresholds?.violatingEvaluationWindow,
             dealertingSamples: response?.items?.[0]?.value?.host?.highCpuSaturationDetection?.detectionMode == "auto"? 5: detections?.items?.[0]?.value?.host?.highCpuSaturationDetection?.customThresholds?.eventThresholds?.dealertingSamples,
@@ -48,13 +50,19 @@ export const MainContent = ({ title, subtitle, toggleGroups, isDetailViewVisible
             settingId: "GC Activity",
             enabled: (response?.items?.[0]?.value?.host?.highGcActivityDetection?.enabled)? "enabled":"disabled",
             detectionMode: response?.items?.[0]?.value?.host?.highGcActivityDetection?.detectionMode,
-            threshold: response?.items?.[0]?.value?.host?.highGcActivityDetection?.detectionMode == "auto"? "40% GC time, 25% GC suspension": `${response?.items?.[0]?.value?.host?.highGcActivityDetection?.customThresholds?.gcTimePercentage}% GC time, ${response?.items?.[0]?.value?.host?.highGcActivityDetection?.customThresholds?.gcSuspensionPercentage}% GC suspension`
+            thresholds:{
+              timeThreshold: response?.items?.[0]?.value?.host?.highGcActivityDetection?.detectionMode == "auto"? "40": `${response?.items?.[0]?.value?.host?.highGcActivityDetection?.customThresholds?.gcTimePercentage}`,
+              suspensionThreshold: response?.items?.[0]?.value?.host?.highGcActivityDetection?.detectionMode == "auto"? "25": `${response?.items?.[0]?.value?.host?.highGcActivityDetection?.customThresholds?.gcSuspensionPercentage}`
+            }
           },
           {
             settingId: "Memory Detection",
             enabled: (response?.items?.[0]?.value?.host?.highMemoryDetection?.enabled)? "enabled":"disabled",
             detectionMode: response?.items?.[0]?.value?.host?.highMemoryDetection?.detectionMode,
-            threshold: response?.items?.[0]?.value?.host?.highMemoryDetection?.detectionMode == "auto"? "90% Windows, 80% Unix": `${response?.items?.[0]?.value?.host?.highMemoryDetection?.customThresholds?.usedMemoryPercentageWindows}% Windows, ${response?.items?.[0]?.value?.host?.highMemoryDetection?.customThresholds?.usedMemoryPercentageNonWindows}% Unix`
+            thresholds:{
+              windowsThreshold: response?.items?.[0]?.value?.host?.highMemoryDetection?.detectionMode == "auto"? "90": `${response?.items?.[0]?.value?.host?.highMemoryDetection?.customThresholds?.usedMemoryPercentageWindows}`,
+              unixThreshold: response?.items?.[0]?.value?.host?.highMemoryDetection?.detectionMode == "auto"? "80": `${response?.items?.[0]?.value?.host?.highMemoryDetection?.customThresholds?.usedMemoryPercentageNonWindows}`
+            }
           }
         ];
         setDetections(detectionsData);  // Store all detections in state
@@ -120,9 +128,7 @@ export const MainContent = ({ title, subtitle, toggleGroups, isDetailViewVisible
         </TitleBar.Action>
       </TitleBar>
       <LevelToggle toggleGroups={toggleGroups} />
-        <DataTable columns={columns} data={detections}>
-
-        </DataTable> 
+        <DataTable columns={columns} data={detections}></DataTable> 
     </Page.Main>
   );
 };

@@ -18,23 +18,27 @@ const StyledFlex = styled(Flex)`
   font-size: 18px;
 `;
 
-export const EnvironmentConfig = ({ format, threshold, violatingSamples, window, dealertingSamples, dealertingWindow, enabled }) => {
+export const EnvironmentConfig = ({ format, thresholds, violatingSamples, window, dealertingSamples, dealertingWindow, enabled }) => {
 
 //Render based on incoming config format  
   const renderMap = {
-    standard: () => (
+    "CPU Saturation": () => (
       <StyledFlex flexDirection="row" alignItems="center">
-        <Container color="critical">{threshold}</Container>% for{" "}
+        <Container color="critical">{thresholds.threshold}%</Container> for{" "}
         <Container color="success">{violatingSamples}</Container> of{" "}
         <Container color="neutral">{window}</Container> one-minute samples
       </StyledFlex>
     ),
-    toggle: () => (
+    "GC Activity": () => (
       <StyledFlex flexDirection="row" alignItems="center">
-        Alert is{" "}
-        <Container color={enabled === "disabled" ? "success" : "critical"}>
-          {enabled}
-        </Container>
+        <Container color="critical">{thresholds.timeThreshold}%</Container> GC Time
+        <Container color="critical">{thresholds.suspensionThreshold}%</Container> suspension
+      </StyledFlex>
+    ),
+    "Memory Detection": () => (
+      <StyledFlex flexDirection="row" alignItems="center">
+        <Container color="critical">{thresholds.windowsThreshold}%</Container>usage for Windows
+        <Container color="critical">{thresholds.unixThreshold}%</Container> usage for Unix
       </StyledFlex>
     ),
   };

@@ -37,6 +37,7 @@ export const DetailedViewOverview = ({
 }) => {
   console.log("DETECTIONS:\n", detections);
   console.log("SELECTED SETTING:\n", selectedSetting);
+  console.log("MY THRESHOLDS:", selectedSetting.thresholds)
 
   // Find the detection matching the selectedSetting
   const selectedDetection = useMemo(
@@ -68,8 +69,8 @@ export const DetailedViewOverview = ({
         <Flex flexDirection='row' alignItems='center'>
           {selectedDetection ? (
             <EnvironmentConfig
-              format="standard"
-              threshold={selectedDetection.threshold}
+              format={selectedDetection.settingId}
+              thresholds={selectedDetection.thresholds}
               violatingSamples={selectedDetection.violatingSamples}
               window={selectedDetection.window}
               dealertingSamples={selectedDetection.dealertingSamples}
