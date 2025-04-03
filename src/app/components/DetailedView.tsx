@@ -85,6 +85,7 @@ export const DetailedView = ({
     { id: 'Previous configuration', header: 'Previous configuration', accessor: 'previousConfiguration' }
   ], []);
   console.log("THRESHOLD:",detections)
+  console.log("IN DV:", selectedSetting)
   return (
     <Page.DetailView
       preferredWidth={1000}
@@ -95,7 +96,7 @@ export const DetailedView = ({
       {/* Title Bar */}
       <TitleBar>
         <TitleBar.Title>
-          <Heading><CriticalIcon /> {title}</Heading>
+          {selectedSetting && (<Heading><CriticalIcon /> {selectedSetting.settingId} </Heading>)}
         </TitleBar.Title>
         <TitleBar.Subtitle>{subtitle}</TitleBar.Subtitle>
         <TitleBar.Action>
